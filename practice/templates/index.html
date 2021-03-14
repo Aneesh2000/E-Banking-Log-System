@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +11,27 @@
     <ul>
         {% if user.is_authenticated %}
             <li>Hello,{{user.username}}</li>
-            <li><a href="app2/logout">Logout</a></li>
+            <button type="button">
+                <a href='app2/logout'>Logout</a>
+            </button>
+            <!-- <li><a href="app2/logout">Logout</a></li> -->
         {% else %}
-            <a href="app2/reg"><li>Register</li></a>
-            <a href="app2/login"><li>Login</li></a>
+
+        <div style="width: 100%; background-color:aquamarine; height: 600px"> 
+        <center>
+        <button type="button" style="position: relative; top: 250px width: 300px;height: 100px;">
+            <a href='app2/reg'>Registration</a>
+        </button> 
+        <button type="button" style="position: relative; top: 250px width: 300px;height: 100px;">
+            <a href='app2/login'>Login</a>
+        </button>
+
+    </center>
+
+        </div>
+        
+            <!-- <a href="app2/reg"><li>Register</li></a>
+            <a href="app2/login"><li>Login</li></a> -->
         {% endif %}
     </ul>
 </body>

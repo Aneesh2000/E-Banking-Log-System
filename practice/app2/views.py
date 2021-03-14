@@ -8,6 +8,8 @@ def reg(request):
     if request.method=='POST':
         username=request.POST['user_name']
         email=request.POST['email']
+        First=request.POST['First']
+        Last=request.POST['Last']
         password=request.POST['pass']
         confpass = request.POST['confpass']
 
@@ -35,7 +37,7 @@ def reg(request):
 def login(request):
    
     if request.method=='POST':
-        username=request.POST['user_name']
+        username=request.POST['username']
         password=request.POST['pass']
         user=auth.authenticate(username=username,password=password)#this like checks in DB whether the user is there or not
         if user is not None:
