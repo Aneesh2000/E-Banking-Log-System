@@ -21,7 +21,7 @@ def reg(request):
                 messages.info(request,'Email Taken')
                 return redirect('register')
             else:
-                user=User.objects.create_user(username=username,password=password,email=email)
+                user=User.objects.create_user(username=username,password=password,email=email,first_name=First,last_name=Last)
                 user.save()
                 
                 return redirect('login_page')
