@@ -42,7 +42,7 @@ def login(request):
         user=auth.authenticate(username=username,password=password)#this like checks in DB whether the user is there or not
         if user is not None:
             auth.login(request,user) # this line is responsible for logging in. 
-            return redirect('/')
+            return render(request,'Dashboard.html')
         else:
             messages.info(request,'Invalid Credentials')
             return redirect('login_page')
