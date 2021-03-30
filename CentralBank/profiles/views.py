@@ -52,4 +52,6 @@ def money_transfer(request):
         return redirect("profiles/profile.html")
     else:
         form = forms.MoneyTransferForm()
+        
     return render(request, "profiles/money_transfer.html", {"form": form})
+    
