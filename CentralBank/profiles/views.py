@@ -54,76 +54,76 @@ def money_transfer(request):
         form = forms.MoneyTransferForm()
     return render(request, "profiles/money_transfer.html", {"form": form})
 
-def loan(request):
-    return render(request, "profiles/loans.html")
+# def loan(request):
+#     return render(request, "profiles/loans.html")
 
-def ewallet(request):
-    return render(request, "profiles/eWallet.html")
+# def ewallet(request):
+#     return render(request, "profiles/eWallet.html")
 
-def online_pay(request):
-    return render(request, "profiles/online_payment.html")
+# def online_pay(request):
+#     return render(request, "profiles/online_payment.html")
 
-def settings(request):
-    return render(request, "profiles/settings.html")
+# def settings(request):
+#     return render(request, "profiles/settings.html")
 
-def edit_details(request):
-    if request.method == "POST":
-        # POST actions for BasicDetailsForms
-        try:
-            curr_user = models.BasicDetails.objects.get(user_name=request.user)
-            form = forms.BasicDetailsForm(request.POST, instance=curr_user)
-            if form.is_valid():
-                form.save()
-        except:
-            form = forms.BasicDetailsForm(request.POST)
-            if form.is_valid():
-                form = form.save(commit=False)
-                form.user_name = request.user
-                form.save()
+# def edit_details(request):
+#     if request.method == "POST":
+#         # POST actions for BasicDetailsForms
+#         try:
+#             curr_user = models.BasicDetails.objects.get(user_name=request.user)
+#             form = forms.BasicDetailsForm(request.POST, instance=curr_user)
+#             if form.is_valid():
+#                 form.save()
+#         except:
+#             form = forms.BasicDetailsForm(request.POST)
+#             if form.is_valid():
+#                 form = form.save(commit=False)
+#                 form.user_name = request.user
+#                 form.save()
 
-        # POST actions for PresentLocationForm
-        try:
-            curr_user = models.PresentLocation.objects.get(user_name=request.user)
-            form = forms.PresentLocationForm(request.POST, instance=curr_user)
-            if form.is_valid():
-                form.save()
-        except:
-            form = forms.PresentLocationForm(request.POST)
-            if form.is_valid():
-                form = form.save(commit=False)
-                form.user_name = request.user
-                form.save()     
+#         # POST actions for PresentLocationForm
+#         try:
+#             curr_user = models.PresentLocation.objects.get(user_name=request.user)
+#             form = forms.PresentLocationForm(request.POST, instance=curr_user)
+#             if form.is_valid():
+#                 form.save()
+#         except:
+#             form = forms.PresentLocationForm(request.POST)
+#             if form.is_valid():
+#                 form = form.save(commit=False)
+#                 form.user_name = request.user
+#                 form.save()     
         
-        # POST actions for Password change
-        form = PasswordChangeForm(request.user, request.POST)
-        if form.is_valid():
-            user = form.save()
-            update_session_auth_hash(request, user)  # Important!
-            messages.success(request, 'Your password was successfully updated!')
-            return redirect('change_password')
-        else:
-            messages.error(request, 'Please correct the error below.')
+#         # POST actions for Password change
+#         form = PasswordChangeForm(request.user, request.POST)
+#         if form.is_valid():
+#             user = form.save()
+#             update_session_auth_hash(request, user)  # Important!
+#             messages.success(request, 'Your password was successfully updated!')
+#             return redirect('change_password')
+#         else:
+#             messages.error(request, 'Please correct the error below.')
 
-        return redirect("profiles/edit_details.html")
+#         return redirect("profiles/edit_details.html")
     
-    else: # GET actions
-        try:
-            curr_user = models.BasicDetails.objects.get(user_name=request.user)
-            form1 = forms.BasicDetailsForm(instance=curr_user) # basic details
-        except:
-            form1 = forms.BasicDetailsForm()
+#     else: # GET actions
+#         try:
+#             curr_user = models.BasicDetails.objects.get(user_name=request.user)
+#             form1 = forms.BasicDetailsForm(instance=curr_user) # basic details
+#         except:
+#             form1 = forms.BasicDetailsForm()
         
-        try:
-            curr_user = models.PresentLocation.objects.get(user_name=request.user)
-            form2 = forms.PresentLocationForm(instance=curr_user) # location
-        except:
-            form2 = forms.PresentLocationForm()
+#         try:
+#             curr_user = models.PresentLocation.objects.get(user_name=request.user)
+#             form2 = forms.PresentLocationForm(instance=curr_user) # location
+#         except:
+#             form2 = forms.PresentLocationForm()
 
-        # change password
-        form3 = PasswordChangeForm(request.user)
+#         # change password
+#         form3 = PasswordChangeForm(request.user)
 
-        dici = {"form1": form1, "form2": form2, "form3": form3}
-        return render(request, "profiles/edit_details.html", dici)
+#         dici = {"form1": form1, "form2": form2, "form3": form3}
+#         return render(request, "profiles/edit_details.html", dici)
 
-def delete_account(request):
-    return render(request, "profiles/delete_account.html")
+# def delete_account(request):
+#     return render(request, "profiles/delete_account.html")
