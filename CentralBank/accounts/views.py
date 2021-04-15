@@ -9,6 +9,14 @@ import logging
 
 logger = logging.getLogger('django')
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[-1].strip()
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 # Create your views here.
 def register(request):
     if request.method == "POST":
@@ -35,7 +43,9 @@ def sign_in(request):
             user = form.get_user()
             #return render(request,"index.html")
             login(request, user)
-            logger.info('user Logged-In sucessfully')
+            ip = get_client_ip(request)
+            z = 'user Logged_In Successfully '+str(ip)
+            logger.info(z)
             return redirect("profiles:account_status")
         else:
             logger.error('Error while user getting loggedin')
