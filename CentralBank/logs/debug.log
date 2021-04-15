@@ -17413,3 +17413,91 @@ INFO 2021-04-15 15:03:15,497 autoreload 5536 5556 E:\cap_1\CentralBank\accounts\
 INFO 2021-04-15 15:03:17,010 autoreload 6860 9504 Watching for file changes with StatReloader
 INFO 2021-04-15 15:03:20,498 autoreload 6860 9504 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
 INFO 2021-04-15 15:03:21,571 autoreload 8112 7864 Watching for file changes with StatReloader
+INFO 2021-04-15 15:04:16,985 autoreload 8112 7864 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:04:18,058 autoreload 11040 16192 Watching for file changes with StatReloader
+INFO 2021-04-15 15:04:19,674 autoreload 11040 16192 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:04:20,723 autoreload 6456 7176 Watching for file changes with StatReloader
+INFO 2021-04-15 15:04:26,192 autoreload 6456 7176 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:04:27,313 autoreload 18160 17624 Watching for file changes with StatReloader
+INFO 2021-04-15 15:04:28,653 autoreload 18160 17624 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:04:29,969 autoreload 8092 13460 Watching for file changes with StatReloader
+INFO 2021-04-15 15:04:35,730 views 8092 16720 user Logged-out sucessfully
+INFO 2021-04-15 15:04:35,736 basehttp 8092 16720 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-04-15 15:04:35,759 basehttp 8092 16720 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-04-15 15:04:46,854 log 8092 16720 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\cap_1\CentralBank\accounts\views.py", line 48, in sign_in
+    acc_no = request.Status.account_number()
+AttributeError: 'WSGIRequest' object has no attribute 'Status'
+ERROR 2021-04-15 15:04:46,856 basehttp 8092 16720 "POST /accounts/login/ HTTP/1.1" 500 71165
+INFO 2021-04-15 15:05:04,773 autoreload 8092 13460 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:05:05,769 autoreload 12556 17800 Watching for file changes with StatReloader
+INFO 2021-04-15 15:05:08,216 autoreload 12556 17800 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:05:09,245 autoreload 18296 15700 Watching for file changes with StatReloader
+WARNING 2021-04-15 15:05:33,665 log 18296 18268 Forbidden (CSRF token missing or incorrect.): /accounts/login/
+WARNING 2021-04-15 15:05:33,665 basehttp 18296 18268 "POST /accounts/login/ HTTP/1.1" 403 2513
+INFO 2021-04-15 15:05:35,370 basehttp 18296 18268 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-04-15 15:05:43,079 log 18296 18268 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\cap_1\CentralBank\accounts\views.py", line 48, in sign_in
+    acc_no = request.user.get_account_number()
+AttributeError: 'User' object has no attribute 'get_account_number'
+ERROR 2021-04-15 15:05:43,080 basehttp 18296 18268 "POST /accounts/login/ HTTP/1.1" 500 71189
+INFO 2021-04-15 15:05:54,441 autoreload 18296 15700 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:05:55,462 autoreload 8040 16192 Watching for file changes with StatReloader
+INFO 2021-04-15 15:05:56,891 autoreload 8040 16192 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:05:58,021 autoreload 15216 7596 Watching for file changes with StatReloader
+INFO 2021-04-15 15:05:58,826 basehttp 15216 17852 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 15:06:00,092 basehttp 15216 17852 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-04-15 15:06:09,052 log 15216 17852 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\cap_1\CentralBank\accounts\views.py", line 48, in sign_in
+    acc_no = request.Status.get_account_number()
+AttributeError: 'WSGIRequest' object has no attribute 'Status'
+ERROR 2021-04-15 15:06:09,054 basehttp 15216 17852 "POST /accounts/login/ HTTP/1.1" 500 71173
+INFO 2021-04-15 15:12:57,348 basehttp 15216 7252 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 15:13:54,651 autoreload 15216 7596 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:13:55,914 autoreload 16216 472 Watching for file changes with StatReloader
+INFO 2021-04-15 15:14:12,843 autoreload 16216 472 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:14:14,106 autoreload 1972 7548 Watching for file changes with StatReloader
+INFO 2021-04-15 15:14:36,190 autoreload 1972 7548 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:14:37,249 autoreload 16316 3240 Watching for file changes with StatReloader
+INFO 2021-04-15 15:14:45,855 autoreload 16316 3240 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:14:47,051 autoreload 12584 16808 Watching for file changes with StatReloader
+INFO 2021-04-15 15:14:57,678 autoreload 12584 16808 E:\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-04-15 15:14:58,668 autoreload 2136 13392 Watching for file changes with StatReloader
+INFO 2021-04-15 15:15:03,156 autoreload 2136 13392 E:\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-04-15 15:15:04,167 autoreload 6736 10964 Watching for file changes with StatReloader
+INFO 2021-04-15 15:15:12,811 autoreload 6736 10964 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:15:13,786 autoreload 18264 3412 Watching for file changes with StatReloader
+ERROR 2021-04-15 15:15:23,174 log 18264 11460 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\cap_1\CentralBank\accounts\views.py", line 51, in sign_in
+    z = 'user: '+username+" account_no: "+curr_user.account_number+ ' Logged_In Successfully '+'ip_address: '+str(ip)
+TypeError: can only concatenate str (not "int") to str
+ERROR 2021-04-15 15:15:23,175 basehttp 18264 11460 "POST /accounts/login/ HTTP/1.1" 500 71379
+INFO 2021-04-15 15:15:31,199 autoreload 18264 3412 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:15:32,284 autoreload 11696 476 Watching for file changes with StatReloader
+INFO 2021-04-15 15:15:35,595 autoreload 11696 476 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:15:36,578 autoreload 16148 9316 Watching for file changes with StatReloader
+INFO 2021-04-15 15:15:38,632 basehttp 16148 15072 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 15:15:39,726 basehttp 16148 15072 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 15:15:47,801 views 16148 15072 user: aneesh account_no: 211381 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-04-15 15:15:47,835 basehttp 16148 15072 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-04-15 15:15:47,910 basehttp 16148 15072 "GET /profile/account_status/ HTTP/1.1" 200 5645

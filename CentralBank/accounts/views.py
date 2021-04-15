@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login
 from django.contrib.auth import logout
 from django.http import HttpResponse
+from profiles.models import Status 
 
 import logging 
 
@@ -45,8 +46,9 @@ def sign_in(request):
             login(request, user)
             ip = get_client_ip(request)
             username = request.user.get_username()
-            # acc_no = request..account_number()
-            z = 'user: '+username+ ' Logged_In Successfully '+'ip_address: '+str(ip)
+            curr_user = Status.objects.get(user_name=username)
+
+            z = 'user: '+username+" account_no: "+str(curr_user.account_number)+ ' Logged_In Successfully '+'ip_address: '+str(ip)
             logger.info(z)
             return redirect("profiles:account_status")
         else:
