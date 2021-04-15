@@ -17233,3 +17233,183 @@ INFO 2021-04-15 14:39:17,527 basehttp 15696 16652 "GET /accounts/login/ HTTP/1.1
 INFO 2021-04-15 14:39:28,723 views 15696 16652 user Logged_In Successfully 127.0.0.1
 INFO 2021-04-15 14:39:28,727 basehttp 15696 16652 "POST /accounts/login/ HTTP/1.1" 302 0
 INFO 2021-04-15 14:39:28,829 basehttp 15696 16652 "GET /profile/account_status/ HTTP/1.1" 200 5644
+INFO 2021-04-15 14:45:16,125 autoreload 15096 15940 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:23,378 autoreload 15096 15940 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:25,049 autoreload 3912 18140 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:27,347 autoreload 3912 18140 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:28,371 autoreload 13944 18272 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:30,683 autoreload 13944 18272 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:31,626 autoreload 18080 5248 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:40,181 autoreload 18080 5248 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:41,177 autoreload 10140 11148 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:42,498 autoreload 10140 11148 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:43,490 autoreload 16640 18232 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:44,766 autoreload 16640 18232 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:45,799 autoreload 17896 17936 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:50,215 autoreload 17896 17936 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:51,517 autoreload 13896 7432 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:52,838 autoreload 13896 7432 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:53,971 autoreload 5652 16776 Watching for file changes with StatReloader
+INFO 2021-04-15 14:47:56,315 autoreload 5652 16776 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:47:57,330 autoreload 17704 9780 Watching for file changes with StatReloader
+INFO 2021-04-15 14:48:19,578 autoreload 2696 14432 Watching for file changes with StatReloader
+INFO 2021-04-15 14:48:31,184 autoreload 2696 14432 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:48:32,245 autoreload 14404 18264 Watching for file changes with StatReloader
+INFO 2021-04-15 14:48:36,671 autoreload 14404 18264 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:48:37,641 autoreload 5300 10080 Watching for file changes with StatReloader
+INFO 2021-04-15 14:48:42,089 autoreload 5300 10080 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:48:43,102 autoreload 6832 15440 Watching for file changes with StatReloader
+INFO 2021-04-15 14:49:04,165 autoreload 6832 15440 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:49:05,163 autoreload 2980 9276 Watching for file changes with StatReloader
+INFO 2021-04-15 14:49:09,600 autoreload 2980 9276 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:49:10,917 autoreload 10136 10396 Watching for file changes with StatReloader
+INFO 2021-04-15 14:49:39,159 autoreload 10136 10396 E:\cap_1\CentralBank\CentralBank\settings.py changed, reloading.
+INFO 2021-04-15 14:49:40,212 autoreload 14116 14620 Watching for file changes with StatReloader
+INFO 2021-04-15 14:49:42,535 autoreload 14116 14620 E:\cap_1\CentralBank\CentralBank\settings.py changed, reloading.
+INFO 2021-04-15 14:49:43,494 autoreload 8276 16512 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:02,332 autoreload 8276 16512 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:03,467 autoreload 3172 16896 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:04,906 autoreload 3172 16896 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:05,906 autoreload 11844 10400 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:08,312 autoreload 11844 10400 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:09,457 autoreload 12016 4128 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:12,872 autoreload 12016 4128 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:13,828 autoreload 12668 4892 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:16,190 autoreload 12668 4892 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:17,166 autoreload 16696 16784 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:21,559 autoreload 16696 16784 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:22,549 autoreload 7220 9316 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:23,898 autoreload 7220 9316 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:24,933 autoreload 6284 10140 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:26,356 autoreload 6284 10140 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:27,346 autoreload 2332 11876 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:28,666 autoreload 2332 11876 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:29,632 autoreload 10496 16188 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:33,051 autoreload 10496 16188 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:50:34,113 autoreload 12016 5640 Watching for file changes with StatReloader
+INFO 2021-04-15 14:50:38,757 basehttp 12016 7808 "GET / HTTP/1.1" 200 3552
+INFO 2021-04-15 14:50:38,834 basehttp 12016 7808 "GET /static/images/logo_2.png HTTP/1.1" 200 36309
+INFO 2021-04-15 14:50:43,316 basehttp 12016 7808 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-04-15 14:51:21,162 log 12016 7808 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\cap_1\CentralBank\accounts\views.py", line 48, in sign_in
+    z = 'user '+user.user_name+' Logged_In Successfully '+str(ip)
+AttributeError: 'User' object has no attribute 'user_name'
+ERROR 2021-04-15 14:51:21,164 basehttp 12016 7808 "POST /accounts/login/ HTTP/1.1" 500 70872
+INFO 2021-04-15 14:51:27,568 basehttp 12016 7808 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 14:52:09,093 autoreload 12016 5640 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:52:10,506 autoreload 12804 17140 Watching for file changes with StatReloader
+INFO 2021-04-15 14:52:18,905 views 12804 17880 user Logged_In Successfully 127.0.0.1
+INFO 2021-04-15 14:52:18,949 basehttp 12804 17880 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-04-15 14:52:19,050 basehttp 12804 17880 "GET /profile/account_status/ HTTP/1.1" 200 5645
+INFO 2021-04-15 14:53:09,151 autoreload 12804 17140 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:10,455 autoreload 14512 4632 Watching for file changes with StatReloader
+INFO 2021-04-15 14:53:12,862 autoreload 14512 4632 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:13,946 autoreload 8108 3788 Watching for file changes with StatReloader
+INFO 2021-04-15 14:53:15,270 autoreload 8108 3788 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:16,377 autoreload 5512 5696 Watching for file changes with StatReloader
+INFO 2021-04-15 14:53:17,685 autoreload 5512 5696 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:18,741 autoreload 17304 3804 Watching for file changes with StatReloader
+INFO 2021-04-15 14:53:20,077 autoreload 17304 3804 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:21,198 autoreload 16764 3972 Watching for file changes with StatReloader
+INFO 2021-04-15 14:53:33,998 autoreload 16764 3972 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:35,019 autoreload 17228 15272 Watching for file changes with StatReloader
+INFO 2021-04-15 14:53:38,508 autoreload 17228 15272 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:53:39,535 autoreload 8864 15616 Watching for file changes with StatReloader
+INFO 2021-04-15 14:54:43,424 autoreload 8864 15616 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:54:44,453 autoreload 2064 4636 Watching for file changes with StatReloader
+INFO 2021-04-15 14:54:48,940 autoreload 2064 4636 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:54:50,008 autoreload 8888 11876 Watching for file changes with StatReloader
+INFO 2021-04-15 14:54:52,314 autoreload 8888 11876 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:54:53,376 autoreload 15440 15836 Watching for file changes with StatReloader
+INFO 2021-04-15 14:54:56,792 autoreload 15440 15836 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:54:57,836 autoreload 12020 8940 Watching for file changes with StatReloader
+INFO 2021-04-15 14:54:59,164 autoreload 12020 8940 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:55:00,250 autoreload 11532 14228 Watching for file changes with StatReloader
+INFO 2021-04-15 14:55:03,634 views 11532 16300 user Logged-out sucessfully
+INFO 2021-04-15 14:55:03,639 basehttp 11532 16300 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-04-15 14:55:03,671 basehttp 11532 16300 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 14:55:14,237 views 11532 16300 user aneesh Logged_In Successfully 127.0.0.1
+INFO 2021-04-15 14:55:14,243 basehttp 11532 16300 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-04-15 14:55:14,321 basehttp 11532 16300 "GET /profile/account_status/ HTTP/1.1" 200 5645
+INFO 2021-04-15 14:55:53,939 autoreload 11532 14228 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:55:55,199 autoreload 6908 17312 Watching for file changes with StatReloader
+INFO 2021-04-15 14:55:58,524 autoreload 6908 17312 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:55:59,537 autoreload 12236 16424 Watching for file changes with StatReloader
+INFO 2021-04-15 14:56:06,020 autoreload 12236 16424 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:56:07,039 autoreload 11000 1676 Watching for file changes with StatReloader
+INFO 2021-04-15 14:57:59,330 autoreload 11000 1676 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:58:00,673 autoreload 13672 8088 Watching for file changes with StatReloader
+INFO 2021-04-15 14:58:04,138 autoreload 13672 8088 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:58:05,116 autoreload 9212 7808 Watching for file changes with StatReloader
+INFO 2021-04-15 14:58:07,496 autoreload 9212 7808 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:58:08,687 autoreload 17624 11940 Watching for file changes with StatReloader
+INFO 2021-04-15 14:58:10,090 autoreload 17624 11940 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:58:11,102 autoreload 17012 12808 Watching for file changes with StatReloader
+INFO 2021-04-15 14:58:15,469 autoreload 17012 12808 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:58:16,457 autoreload 8332 2220 Watching for file changes with StatReloader
+INFO 2021-04-15 14:58:20,854 autoreload 8332 2220 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:58:21,946 autoreload 16544 7632 Watching for file changes with StatReloader
+INFO 2021-04-15 14:58:57,319 basehttp 16544 12392 "GET / HTTP/1.1" 200 3552
+INFO 2021-04-15 14:58:59,131 basehttp 16544 12392 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 14:59:11,176 autoreload 16544 7632 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:59:12,274 autoreload 11568 14512 Watching for file changes with StatReloader
+INFO 2021-04-15 14:59:14,732 autoreload 11568 14512 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:59:15,707 autoreload 11716 10972 Watching for file changes with StatReloader
+INFO 2021-04-15 14:59:23,433 autoreload 11716 10972 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:59:24,517 autoreload 17300 15336 Watching for file changes with StatReloader
+INFO 2021-04-15 14:59:26,887 autoreload 17300 15336 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:59:27,903 autoreload 14032 15456 Watching for file changes with StatReloader
+INFO 2021-04-15 14:59:36,512 autoreload 14032 15456 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:59:37,563 autoreload 12008 16416 Watching for file changes with StatReloader
+INFO 2021-04-15 14:59:39,152 autoreload 12008 16416 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 14:59:40,148 autoreload 17568 1808 Watching for file changes with StatReloader
+ERROR 2021-04-15 14:59:54,066 log 17568 17088 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\cap_1\CentralBank\accounts\views.py", line 48, in sign_in
+    acc_no = request.user.account_number()
+AttributeError: 'User' object has no attribute 'account_number'
+ERROR 2021-04-15 14:59:54,068 basehttp 17568 17088 "POST /accounts/login/ HTTP/1.1" 500 71359
+INFO 2021-04-15 15:00:08,635 autoreload 17568 1808 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:00:09,901 autoreload 17984 14384 Watching for file changes with StatReloader
+INFO 2021-04-15 15:00:12,317 autoreload 17984 14384 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:00:13,317 autoreload 12544 17108 Watching for file changes with StatReloader
+INFO 2021-04-15 15:00:22,882 autoreload 12544 17108 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:00:23,857 autoreload 11876 7148 Watching for file changes with StatReloader
+INFO 2021-04-15 15:00:27,375 autoreload 11876 7148 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:00:28,428 autoreload 15156 7412 Watching for file changes with StatReloader
+INFO 2021-04-15 15:00:29,764 autoreload 15156 7412 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:00:30,907 autoreload 17916 16888 Watching for file changes with StatReloader
+INFO 2021-04-15 15:01:44,802 autoreload 17916 16888 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:01:45,832 autoreload 10028 4800 Watching for file changes with StatReloader
+INFO 2021-04-15 15:01:52,277 autoreload 10028 4800 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:01:53,290 autoreload 4732 5476 Watching for file changes with StatReloader
+INFO 2021-04-15 15:01:59,856 autoreload 4732 5476 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:02:00,827 autoreload 8040 10812 Watching for file changes with StatReloader
+INFO 2021-04-15 15:02:07,195 views 8040 12280 user Logged-out sucessfully
+INFO 2021-04-15 15:02:07,201 basehttp 8040 12280 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-04-15 15:02:07,228 basehttp 8040 12280 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-04-15 15:02:17,064 views 8040 12280 user: aneesh Logged_In Successfully 127.0.0.1
+INFO 2021-04-15 15:02:17,067 basehttp 8040 12280 "POST /accounts/login/ HTTP/1.1" 302 0
+ERROR 2021-04-15 15:02:17,071 basehttp 8040 12280 "POST /accounts/login/ HTTP/1.1" 500 59
+INFO 2021-04-15 15:02:17,113 views 8040 17620 user: aneesh Logged_In Successfully 127.0.0.1
+INFO 2021-04-15 15:02:17,115 basehttp 8040 17620 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-04-15 15:02:17,190 basehttp 8040 17620 "GET /profile/account_status/ HTTP/1.1" 200 5645
+INFO 2021-04-15 15:03:06,821 autoreload 8040 10812 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:03:08,104 autoreload 16076 18264 Watching for file changes with StatReloader
+INFO 2021-04-15 15:03:09,595 autoreload 16076 18264 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:03:10,547 autoreload 13440 17048 Watching for file changes with StatReloader
+INFO 2021-04-15 15:03:12,873 autoreload 13440 17048 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:03:14,081 autoreload 5536 5556 Watching for file changes with StatReloader
+INFO 2021-04-15 15:03:15,497 autoreload 5536 5556 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:03:17,010 autoreload 6860 9504 Watching for file changes with StatReloader
+INFO 2021-04-15 15:03:20,498 autoreload 6860 9504 E:\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-04-15 15:03:21,571 autoreload 8112 7864 Watching for file changes with StatReloader

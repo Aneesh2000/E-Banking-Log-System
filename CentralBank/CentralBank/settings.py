@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'CentralBank.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cap_fin',
+        'NAME': 'cap',
         'PORT':'5432',
         'USER':'postgres',
-        'PASSWORD':'karthik',
+        'PASSWORD':'Aneesh2000',
         'HOST':'localhost',
 
     }

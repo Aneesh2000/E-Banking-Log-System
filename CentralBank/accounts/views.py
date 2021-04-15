@@ -44,7 +44,9 @@ def sign_in(request):
             #return render(request,"index.html")
             login(request, user)
             ip = get_client_ip(request)
-            z = 'user Logged_In Successfully '+str(ip)
+            username = request.user.get_username()
+            # acc_no = request..account_number()
+            z = 'user: '+username+ ' Logged_In Successfully '+'ip_address: '+str(ip)
             logger.info(z)
             return redirect("profiles:account_status")
         else:
