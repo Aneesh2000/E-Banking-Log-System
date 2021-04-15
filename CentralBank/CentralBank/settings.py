@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'CentralBank.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cap',
-        'PORT':'1234',
+        'NAME': 'cap_fin',
+        'PORT':'5432',
         'USER':'postgres',
-        'PASSWORD':'admin',
+        'PASSWORD':'karthik',
         'HOST':'localhost',
 
     }
@@ -133,3 +133,35 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+LOGGING = {
+    'version':1,
+    'loggers':{
+        'django':{
+            'handlers':['file'],
+            'level':'DEBUG',
+
+        },
+        'django.db.backends':{
+            'handlers':['file2'],
+        },
+    },
+    'handlers':{
+        'file':{
+            'level':'DEBUG',
+            'class':'logging.FileHandler',
+            'filename':'./logs/debug.log',
+             'formatter':'simpleRe',
+        },
+        'file2':{
+            'class':'logging.FileHandler',
+            'filename':'./logs/debug1.log',
+        }
+    },
+    'formatters':{
+        'simpleRe': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        }
+    }
+}
