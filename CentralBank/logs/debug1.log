@@ -1209,6 +1209,7 @@
 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-04-15T09:45:47.845886+00:00'::timestamptz AND "django_session"."session_key" = 'scb4vpyp96crxcx67klzz3ruyq4bpl2i') LIMIT 21; args=(datetime.datetime(2021, 4, 15, 9, 45, 47, 845886, tzinfo=<UTC>), 'scb4vpyp96crxcx67klzz3ruyq4bpl2i')
 (0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
 (0.000) SELECT "profiles_status"."id", "profiles_status"."account_number", "profiles_status"."balance", "profiles_status"."user_name" FROM "profiles_status" WHERE "profiles_status"."user_name" = 'aneesh' LIMIT 21; args=('aneesh',)
+<<<<<<< HEAD
 (0.000) 
             SELECT c.relname,
             CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
@@ -3172,3 +3173,5 @@ CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_
 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'afvlah00ou5qf089xa7wx1u2q0gaw320' LIMIT 21; args=('afvlah00ou5qf089xa7wx1u2q0gaw320',)
 (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('afvlah00ou5qf089xa7wx1u2q0gaw320'); args=('afvlah00ou5qf089xa7wx1u2q0gaw320',)
 (0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'karthik' LIMIT 21; args=('karthik',)
+=======
+>>>>>>> e3e14f15e366fcdd7257a41a94f2f87941d46726

@@ -17501,6 +17501,7 @@ INFO 2021-04-15 15:15:39,726 basehttp 16148 15072 "GET /accounts/login/ HTTP/1.1
 INFO 2021-04-15 15:15:47,801 views 16148 15072 user: aneesh account_no: 211381 Logged_In Successfully ip_address: 127.0.0.1
 INFO 2021-04-15 15:15:47,835 basehttp 16148 15072 "POST /accounts/login/ HTTP/1.1" 302 0
 INFO 2021-04-15 15:15:47,910 basehttp 16148 15072 "GET /profile/account_status/ HTTP/1.1" 200 5645
+<<<<<<< HEAD
 INFO 2021-04-28 10:30:22,557 autoreload 23244 12132 Watching for file changes with StatReloader
 INFO 2021-04-28 10:30:54,046 autoreload 23244 12132 E:\sem6\Capstone\E-Banking-Log-System-master\CentralBank\CentralBank\settings.py changed, reloading.
 INFO 2021-04-28 10:30:54,801 autoreload 14636 23048 Watching for file changes with StatReloader
@@ -18232,3 +18233,5 @@ INFO 2021-05-01 21:22:24,907 basehttp 18344 14644 "GET /accounts/logout/ HTTP/1.
 INFO 2021-05-01 21:22:24,921 basehttp 18344 14644 "GET /accounts/login/ HTTP/1.1" 200 4193
 ERROR 2021-05-01 21:22:32,293 views 18344 14644 Error while user getting loggedin
 INFO 2021-05-01 21:22:32,295 basehttp 18344 14644 "POST /accounts/login/ HTTP/1.1" 200 3552
+=======
+>>>>>>> e3e14f15e366fcdd7257a41a94f2f87941d46726
