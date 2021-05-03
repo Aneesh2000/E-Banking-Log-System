@@ -6,6 +6,12 @@ from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from profiles.models import Status 
 import random
+import logging 
+
+
+logger = logging.getLogger('django')
+
+
 
 # Create your views here.
 def randomGen():
@@ -40,19 +46,22 @@ def money_transfer(request):
             curr_user = models.Status.objects.get(user_name=request.user) # FIELD 3
 
             # Now transfer the money!
-            curr_user.balance = curr_user.balance - transfer_amount
-            dest_user.balance = dest_user.balance + transfer_amount
+            if curr_user.balance - transfer_amount >= 0:
+                curr_user.balance = curr_user.balance - transfer_amount
+                dest_user.balance = dest_user.balance + transfer_amount
 
-            # Save the changes before redirecting
-            curr_user.save()
-            dest_user.save()
+                # Save the changes before redirecting
+                curr_user.save()
+                dest_user.save()
 
-            temp.delete() # NOTE: Now deleting the instance for future money transactions
+                temp.delete() # NOTE: Now deleting the instance for future money transactions
+            else:
+                logger.error("InSufficient Funds for transfering money from account_no "+str(curr_user.account_number)+" to "+str(+dest_user.account_number))
+                messages.error(request,"Insufficent funds.")
 
         return redirect("profiles/profile.html")
     else:
         form = forms.MoneyTransferForm()
-        
     return render(request, "profiles/money_transfer.html", {"form": form})
 
 def edit_details(request):

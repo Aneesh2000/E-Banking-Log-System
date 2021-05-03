@@ -18235,3 +18235,799 @@ ERROR 2021-05-01 21:22:32,293 views 18344 14644 Error while user getting loggedi
 INFO 2021-05-01 21:22:32,295 basehttp 18344 14644 "POST /accounts/login/ HTTP/1.1" 200 3552
 =======
 >>>>>>> e3e14f15e366fcdd7257a41a94f2f87941d46726
+INFO 2021-05-03 10:04:27,967 autoreload 12976 16752 Watching for file changes with StatReloader
+INFO 2021-05-03 10:04:32,366 basehttp 12976 14784 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 10:04:32,435 basehttp 12976 14784 "GET /static/common-styles.css HTTP/1.1" 200 281
+INFO 2021-05-03 10:04:32,448 basehttp 12976 14784 "GET /static/images/logo_2.png HTTP/1.1" 200 36309
+WARNING 2021-05-03 10:04:33,066 log 12976 14784 Not Found: /favicon.ico
+WARNING 2021-05-03 10:04:33,066 basehttp 12976 14784 "GET /favicon.ico HTTP/1.1" 404 2587
+INFO 2021-05-03 10:04:34,396 basehttp 12976 14784 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 10:04:52,809 views 12976 14784 user registered sucessfully
+INFO 2021-05-03 10:04:52,810 basehttp 12976 14784 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:04:52,831 basehttp 12976 14784 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:05:03,110 log 12976 14784 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 49, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:05:03,113 basehttp 12976 14784 "POST /accounts/login/ HTTP/1.1" 500 80275
+INFO 2021-05-03 10:05:12,000 basehttp 12976 14784 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:05:19,780 log 12976 14784 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 49, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:05:19,781 basehttp 12976 14784 "POST /accounts/login/ HTTP/1.1" 500 80275
+INFO 2021-05-03 10:05:49,882 basehttp 12976 14784 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:05:57,764 log 12976 14784 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 49, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:05:57,766 basehttp 12976 14784 "POST /accounts/login/ HTTP/1.1" 500 80275
+INFO 2021-05-03 10:06:10,706 basehttp 12976 14784 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:06:11,540 basehttp 12976 14784 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 10:06:26,253 basehttp 12976 14784 "POST /accounts/register/ HTTP/1.1" 200 5807
+INFO 2021-05-03 10:06:44,169 views 12976 14784 user registered sucessfully
+INFO 2021-05-03 10:06:44,170 basehttp 12976 14784 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:06:44,190 basehttp 12976 14784 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:06:56,392 log 12976 14784 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 49, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:06:56,394 basehttp 12976 14784 "POST /accounts/login/ HTTP/1.1" 500 80281
+INFO 2021-05-03 10:07:01,083 basehttp 12976 14784 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:07:14,041 views 12976 14784 user: aneesh account_no: 211381 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 10:07:14,045 basehttp 12976 14784 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:07:14,233 basehttp 12976 14784 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 10:07:14,278 basehttp 12976 14784 "GET /static/images/logo_1.png HTTP/1.1" 200 107009
+INFO 2021-05-03 10:11:08,657 autoreload 12976 16752 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:11:09,619 autoreload 8304 4508 Watching for file changes with StatReloader
+INFO 2021-05-03 10:11:10,871 autoreload 8304 4508 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:11:12,202 autoreload 3932 5584 Watching for file changes with StatReloader
+INFO 2021-05-03 10:11:15,553 autoreload 3932 5584 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:11:16,493 autoreload 10792 13464 Watching for file changes with StatReloader
+INFO 2021-05-03 10:11:20,805 autoreload 10792 13464 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:11:21,727 autoreload 3284 18944 Watching for file changes with StatReloader
+INFO 2021-05-03 10:11:25,510 basehttp 3284 14216 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 10:11:27,538 basehttp 3284 14216 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 10:11:42,845 views 3284 14216 user registered sucessfully
+INFO 2021-05-03 10:11:42,845 basehttp 3284 14216 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:11:42,857 basehttp 3284 14216 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:11:52,814 log 3284 14216 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 49, in sign_in
+    if Status.objects.get(user_name=username):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:11:52,816 basehttp 3284 14216 "POST /accounts/login/ HTTP/1.1" 500 80481
+INFO 2021-05-03 10:11:59,870 basehttp 3284 14216 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:14:46,650 autoreload 3284 18944 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:14:47,561 autoreload 18064 17140 Watching for file changes with StatReloader
+INFO 2021-05-03 10:15:02,217 autoreload 18064 17140 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:15:03,300 autoreload 19012 18376 Watching for file changes with StatReloader
+INFO 2021-05-03 10:15:08,883 autoreload 19012 18376 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:15:09,819 autoreload 10836 1356 Watching for file changes with StatReloader
+INFO 2021-05-03 10:15:14,404 autoreload 10836 1356 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:15:15,435 autoreload 3580 19248 Watching for file changes with StatReloader
+INFO 2021-05-03 10:23:33,236 autoreload 3580 19248 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:23:34,128 autoreload 14736 17148 Watching for file changes with StatReloader
+INFO 2021-05-03 10:28:16,449 autoreload 14736 17148 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:28:17,396 autoreload 7344 12808 Watching for file changes with StatReloader
+INFO 2021-05-03 10:36:01,397 autoreload 7344 12808 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:36:02,432 autoreload 5004 9904 Watching for file changes with StatReloader
+INFO 2021-05-03 10:36:04,847 autoreload 5004 9904 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:36:05,796 autoreload 16836 19284 Watching for file changes with StatReloader
+INFO 2021-05-03 10:36:07,039 autoreload 16836 19284 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:36:08,006 autoreload 8272 12756 Watching for file changes with StatReloader
+INFO 2021-05-03 10:36:13,417 autoreload 8272 12756 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:36:14,416 autoreload 9792 12204 Watching for file changes with StatReloader
+INFO 2021-05-03 10:36:16,745 autoreload 9792 12204 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:36:17,671 autoreload 4436 17416 Watching for file changes with StatReloader
+INFO 2021-05-03 10:42:48,086 autoreload 4436 17416 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:42:49,320 autoreload 13940 6704 Watching for file changes with StatReloader
+INFO 2021-05-03 10:42:52,686 autoreload 13940 6704 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:42:53,795 autoreload 19128 16540 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:15,922 autoreload 19128 16540 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:17,006 autoreload 9428 9600 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:19,338 autoreload 9428 9600 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:20,380 autoreload 12016 18096 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:22,669 autoreload 12016 18096 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:23,780 autoreload 4092 10720 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:27,345 autoreload 4092 10720 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:28,574 autoreload 1836 6668 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:29,842 autoreload 1836 6668 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:30,931 autoreload 9312 16460 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:32,186 autoreload 9312 16460 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:33,268 autoreload 19420 15332 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:36,652 autoreload 19420 15332 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:37,711 autoreload 18824 6300 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:44,131 autoreload 18824 6300 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:45,157 autoreload 17816 17752 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:47,552 autoreload 17816 17752 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:48,645 autoreload 18004 8484 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:53,009 autoreload 18004 8484 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:54,070 autoreload 18984 11856 Watching for file changes with StatReloader
+INFO 2021-05-03 10:43:58,417 autoreload 18984 11856 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:43:59,455 autoreload 3684 2832 Watching for file changes with StatReloader
+INFO 2021-05-03 10:44:42,805 autoreload 3684 2832 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:44:43,873 autoreload 18048 15612 Watching for file changes with StatReloader
+INFO 2021-05-03 10:45:15,294 basehttp 18048 10132 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:45:27,061 log 18048 10132 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 50, in sign_in
+    user_last = request.user.get_
+AttributeError: 'User' object has no attribute 'get_'
+ERROR 2021-05-03 10:45:27,062 basehttp 18048 10132 "POST /accounts/login/ HTTP/1.1" 500 71768
+INFO 2021-05-03 10:46:31,547 autoreload 18048 15612 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:46:32,734 autoreload 19020 14744 Watching for file changes with StatReloader
+INFO 2021-05-03 10:46:54,363 autoreload 19020 14744 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:46:55,579 autoreload 2408 12616 Watching for file changes with StatReloader
+INFO 2021-05-03 10:46:59,253 autoreload 2408 12616 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:47:00,308 autoreload 11880 19128 Watching for file changes with StatReloader
+INFO 2021-05-03 10:47:04,877 autoreload 11880 19128 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:47:05,910 autoreload 12152 13232 Watching for file changes with StatReloader
+INFO 2021-05-03 10:47:09,459 basehttp 12152 17644 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:47:11,342 basehttp 12152 17644 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:47:23,708 log 12152 17644 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 50, in sign_in
+    user = User.objects.get(username='username')
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2021-05-03 10:47:23,714 basehttp 12152 17644 "POST /accounts/login/ HTTP/1.1" 500 80553
+INFO 2021-05-03 10:47:38,350 basehttp 12152 17644 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:47:49,262 log 12152 17644 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 50, in sign_in
+    user = User.objects.get(username='username')
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2021-05-03 10:47:49,263 basehttp 12152 17644 "POST /accounts/login/ HTTP/1.1" 500 80553
+INFO 2021-05-03 10:47:56,546 basehttp 12152 17644 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:48:14,762 autoreload 12152 13232 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:48:16,293 autoreload 4796 9760 Watching for file changes with StatReloader
+ERROR 2021-05-03 10:48:24,678 log 4796 15324 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 50, in sign_in
+    user = User.objects.get(username='username')
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2021-05-03 10:48:24,687 basehttp 4796 15324 "POST /accounts/login/ HTTP/1.1" 500 80524
+INFO 2021-05-03 10:48:55,940 autoreload 4796 9760 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:48:57,236 autoreload 3392 14248 Watching for file changes with StatReloader
+INFO 2021-05-03 10:49:02,291 basehttp 3392 19272 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:49:04,414 basehttp 3392 19272 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:49:15,628 views 3392 19272 user: aneesh account_no: 211381 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 10:49:15,635 basehttp 3392 19272 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:49:15,730 basehttp 3392 19272 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 10:49:19,203 views 3392 19272 user Logged-out sucessfully
+INFO 2021-05-03 10:49:19,206 basehttp 3392 19272 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:49:19,227 basehttp 3392 19272 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:49:28,591 log 3392 19272 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 53, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:49:28,592 basehttp 3392 19272 "POST /accounts/login/ HTTP/1.1" 500 80328
+INFO 2021-05-03 10:50:52,223 basehttp 3392 19272 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:50:54,274 basehttp 3392 19272 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 10:51:17,075 views 3392 19272 user registered sucessfully
+INFO 2021-05-03 10:51:17,079 basehttp 3392 19272 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:51:17,094 basehttp 3392 19272 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 10:51:26,648 log 3392 19272 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 53, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 10:51:26,650 basehttp 3392 19272 "POST /accounts/login/ HTTP/1.1" 500 80310
+INFO 2021-05-03 10:52:06,252 autoreload 3392 14248 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 10:52:07,874 autoreload 11068 3580 Watching for file changes with StatReloader
+INFO 2021-05-03 10:52:08,455 basehttp 11068 16264 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 10:52:59,178 basehttp 11068 16264 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 10:52:59,598 basehttp 11068 16264 "GET /profile/account_status/ HTTP/1.1" 200 5788
+INFO 2021-05-03 10:56:25,165 autoreload 11068 3580 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:56:26,668 autoreload 14716 15176 Watching for file changes with StatReloader
+INFO 2021-05-03 10:56:32,355 autoreload 14716 15176 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:56:33,453 autoreload 13332 15232 Watching for file changes with StatReloader
+INFO 2021-05-03 10:56:38,899 autoreload 13332 15232 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:56:39,971 autoreload 10168 16676 Watching for file changes with StatReloader
+INFO 2021-05-03 10:56:41,219 autoreload 10168 16676 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:56:42,325 autoreload 17204 16780 Watching for file changes with StatReloader
+INFO 2021-05-03 10:56:46,835 autoreload 17204 16780 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:56:48,007 autoreload 18216 10128 Watching for file changes with StatReloader
+INFO 2021-05-03 10:56:50,630 autoreload 18216 10128 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:56:51,657 autoreload 19108 18564 Watching for file changes with StatReloader
+INFO 2021-05-03 10:57:11,807 autoreload 19108 18564 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:57:13,001 autoreload 2612 13132 Watching for file changes with StatReloader
+INFO 2021-05-03 10:57:15,572 autoreload 2612 13132 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:57:16,862 autoreload 12292 9656 Watching for file changes with StatReloader
+INFO 2021-05-03 10:57:53,571 autoreload 12292 9656 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:57:54,658 autoreload 3984 288 Watching for file changes with StatReloader
+INFO 2021-05-03 10:58:01,189 autoreload 3984 288 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:58:02,233 autoreload 5916 2820 Watching for file changes with StatReloader
+INFO 2021-05-03 10:58:28,538 autoreload 5916 2820 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:58:29,561 autoreload 16544 2416 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:15,798 autoreload 16544 2416 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:16,855 autoreload 15260 11432 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:18,435 autoreload 15260 11432 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:19,516 autoreload 12292 9656 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:26,209 autoreload 12292 9656 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:27,397 autoreload 9308 18184 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:29,100 autoreload 9308 18184 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:30,267 autoreload 10588 19248 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:33,867 autoreload 10588 19248 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:34,964 autoreload 14348 3876 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:37,483 autoreload 14348 3876 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:38,533 autoreload 5416 13540 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:43,225 autoreload 5416 13540 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:44,378 autoreload 18972 10948 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:50,037 autoreload 18972 10948 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:51,131 autoreload 19428 12456 Watching for file changes with StatReloader
+INFO 2021-05-03 10:59:56,753 autoreload 19428 12456 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 10:59:57,817 autoreload 4976 16992 Watching for file changes with StatReloader
+INFO 2021-05-03 11:00:28,063 autoreload 4976 16992 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:00:29,220 autoreload 4068 2996 Watching for file changes with StatReloader
+INFO 2021-05-03 11:00:30,778 autoreload 4068 2996 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:00:31,882 autoreload 5916 12640 Watching for file changes with StatReloader
+INFO 2021-05-03 11:00:33,480 autoreload 5916 12640 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:00:34,578 autoreload 13304 13172 Watching for file changes with StatReloader
+INFO 2021-05-03 11:10:59,526 autoreload 15232 13132 Watching for file changes with StatReloader
+INFO 2021-05-03 11:11:10,223 autoreload 15232 13132 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:11:11,279 autoreload 15316 18156 Watching for file changes with StatReloader
+INFO 2021-05-03 11:11:13,700 autoreload 15316 18156 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:11:14,766 autoreload 16960 19216 Watching for file changes with StatReloader
+INFO 2021-05-03 11:11:16,044 autoreload 16960 19216 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:11:17,206 autoreload 13716 19284 Watching for file changes with StatReloader
+INFO 2021-05-03 11:11:18,483 autoreload 13716 19284 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:11:19,556 autoreload 5944 13544 Watching for file changes with StatReloader
+INFO 2021-05-03 11:11:20,842 autoreload 5944 13544 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:11:21,941 autoreload 15128 17604 Watching for file changes with StatReloader
+INFO 2021-05-03 11:11:26,216 basehttp 15128 7076 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 11:11:28,611 basehttp 15128 7076 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 11:11:31,331 basehttp 15128 7076 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 11:11:42,081 basehttp 15128 7076 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:11:42,186 basehttp 15128 7076 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:11:44,484 basehttp 15128 7076 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:11:45,977 basehttp 15128 7076 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:11:49,237 basehttp 15128 7076 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:12:04,501 basehttp 15128 7076 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 11:12:04,717 basehttp 15128 7076 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 11:12:07,758 basehttp 15128 7076 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:14:16,738 basehttp 15128 7076 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:16:33,637 autoreload 4940 12812 Watching for file changes with StatReloader
+INFO 2021-05-03 11:16:39,703 basehttp 4940 19276 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:16:41,281 basehttp 4940 19276 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:16:44,897 basehttp 4940 19276 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:16:52,854 basehttp 4940 19276 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 11:16:52,974 basehttp 4940 19276 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 11:16:57,508 basehttp 4940 19276 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:16:59,114 basehttp 4940 19276 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:17:32,306 autoreload 15928 1372 Watching for file changes with StatReloader
+INFO 2021-05-03 11:17:34,639 basehttp 15928 15612 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:17:40,506 views 15928 15612 user Logged-out sucessfully
+INFO 2021-05-03 11:17:40,507 basehttp 15928 15612 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:17:40,531 basehttp 15928 15612 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 11:17:50,587 basehttp 15928 15612 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:17:50,784 basehttp 15928 15612 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 11:17:54,450 basehttp 15928 15612 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 11:18:09,834 log 15928 15612 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 3!
+ERROR 2021-05-03 11:18:09,835 basehttp 15928 15612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81255
+ERROR 2021-05-03 11:20:24,930 log 15928 15612 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 4!
+ERROR 2021-05-03 11:20:24,931 basehttp 15928 15612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81355
+INFO 2021-05-03 11:20:37,433 basehttp 15928 15612 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 11:20:38,736 basehttp 15928 15612 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 11:20:42,440 basehttp 15928 15612 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 11:20:48,211 log 15928 15612 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 5!
+ERROR 2021-05-03 11:20:48,212 basehttp 15928 15612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81453
+INFO 2021-05-03 11:22:59,251 basehttp 15928 15612 "GET /profile/money_transfer/ HTTP/1.1" 200 6518
+ERROR 2021-05-03 11:23:01,952 log 15928 15612 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.MoneyTransfer.DoesNotExist: MoneyTransfer matching query does not exist.
+ERROR 2021-05-03 11:23:01,954 basehttp 15928 15612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 80293
+INFO 2021-05-03 11:23:21,209 basehttp 15928 15612 "GET /profile/money_transfer/ HTTP/1.1" 200 6518
+INFO 2021-05-03 11:23:22,972 views 15928 15612 user Logged-out sucessfully
+INFO 2021-05-03 11:23:22,975 basehttp 15928 15612 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:23:23,002 basehttp 15928 15612 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 11:23:36,003 basehttp 15928 15612 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:23:36,226 basehttp 15928 15612 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 11:23:39,938 views 15928 15612 user Logged-out sucessfully
+INFO 2021-05-03 11:23:39,939 basehttp 15928 15612 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:23:39,962 basehttp 15928 15612 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 11:23:48,011 basehttp 15928 15612 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:23:48,117 basehttp 15928 15612 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:23:49,847 basehttp 15928 15612 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 11:23:57,541 basehttp 15928 15612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 11:23:57,649 basehttp 15928 15612 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 11:24:05,286 basehttp 15928 15612 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:24:51,138 basehttp 15928 15612 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+ERROR 2021-05-03 11:25:17,679 log 15928 15612 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 59, in money_transfer
+    logger.error("InSufficient Funds for transfering money from account_no "+curr_user.account_number+" to "+dest_user.account_number)
+TypeError: can only concatenate str (not "int") to str
+ERROR 2021-05-03 11:25:17,680 basehttp 15928 15612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 72588
+INFO 2021-05-03 11:25:34,196 autoreload 15928 1372 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:25:35,291 autoreload 508 16004 Watching for file changes with StatReloader
+INFO 2021-05-03 11:25:38,672 autoreload 508 16004 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:25:39,808 autoreload 10624 16268 Watching for file changes with StatReloader
+INFO 2021-05-03 11:25:42,325 autoreload 10624 16268 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:25:43,536 autoreload 9408 13156 Watching for file changes with StatReloader
+INFO 2021-05-03 11:25:44,892 autoreload 9408 13156 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:25:46,125 autoreload 12220 18580 Watching for file changes with StatReloader
+INFO 2021-05-03 11:25:50,605 autoreload 12220 18580 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 11:25:51,659 autoreload 13812 16480 Watching for file changes with StatReloader
+ERROR 2021-05-03 11:25:58,187 log 13812 4940 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 2!
+ERROR 2021-05-03 11:25:58,189 basehttp 13812 4940 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81056
+INFO 2021-05-03 11:26:08,628 views 13812 4940 user Logged-out sucessfully
+INFO 2021-05-03 11:26:08,634 basehttp 13812 4940 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:26:08,654 basehttp 13812 4940 "GET /accounts/login/ HTTP/1.1" 200 4193
+WARNING 2021-05-03 11:28:19,559 log 13812 4940 Forbidden (CSRF cookie not set.): /accounts/login/
+WARNING 2021-05-03 11:28:19,560 basehttp 13812 4940 "POST /accounts/login/ HTTP/1.1" 403 2870
+INFO 2021-05-03 11:29:18,825 autoreload 12840 9600 Watching for file changes with StatReloader
+INFO 2021-05-03 11:29:21,736 basehttp 12840 14808 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 11:29:26,421 basehttp 12840 14808 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 11:29:37,516 basehttp 12840 14808 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:29:37,634 basehttp 12840 14808 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:29:41,525 basehttp 12840 14808 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+ERROR 2021-05-03 11:29:51,897 log 12840 14808 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 3!
+ERROR 2021-05-03 11:29:51,899 basehttp 12840 14808 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81156
+INFO 2021-05-03 11:30:31,459 basehttp 12840 14808 "GET /profile/money_transfer/ HTTP/1.1" 200 6518
+ERROR 2021-05-03 11:30:33,515 log 12840 14808 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.MoneyTransfer.DoesNotExist: MoneyTransfer matching query does not exist.
+ERROR 2021-05-03 11:30:33,516 basehttp 12840 14808 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 80494
+INFO 2021-05-03 11:30:47,653 basehttp 12840 14808 "GET /profile/money_transfer/ HTTP/1.1" 200 6518
+INFO 2021-05-03 11:30:48,718 views 12840 14808 user Logged-out sucessfully
+INFO 2021-05-03 11:30:48,720 basehttp 12840 14808 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:30:48,741 basehttp 12840 14808 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 11:30:58,265 basehttp 12840 14808 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 11:30:58,377 basehttp 12840 14808 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 11:31:00,451 basehttp 12840 14808 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+ERROR 2021-05-03 11:31:08,705 log 12840 14808 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 5!
+ERROR 2021-05-03 11:31:08,706 basehttp 12840 14808 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81065
+ERROR 2021-05-03 11:31:57,103 log 12840 14808 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 6!
+ERROR 2021-05-03 11:31:57,104 basehttp 12840 14808 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81164
+INFO 2021-05-03 15:09:09,671 autoreload 16988 15208 Watching for file changes with StatReloader
+INFO 2021-05-03 15:09:12,880 basehttp 16988 19044 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 15:09:15,453 basehttp 16988 19044 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:09:26,277 basehttp 16988 19044 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:09:26,344 basehttp 16988 19044 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 15:09:34,097 views 16988 19044 user Logged-out sucessfully
+INFO 2021-05-03 15:09:34,098 basehttp 16988 19044 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:09:34,113 basehttp 16988 19044 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:09:47,173 basehttp 16988 19044 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:09:47,243 basehttp 16988 19044 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 15:09:49,797 basehttp 16988 19044 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 15:09:59,581 log 16988 19044 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 7!
+ERROR 2021-05-03 15:09:59,582 basehttp 16988 19044 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81557
+INFO 2021-05-03 15:10:43,578 autoreload 16988 15208 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:10:44,542 autoreload 19020 16172 Watching for file changes with StatReloader
+ERROR 2021-05-03 15:10:47,768 log 19020 17064 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 8!
+ERROR 2021-05-03 15:10:47,770 basehttp 19020 17064 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81657
+INFO 2021-05-03 15:11:03,719 autoreload 19020 16172 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:11:04,684 autoreload 14500 10528 Watching for file changes with StatReloader
+INFO 2021-05-03 15:11:10,237 autoreload 14500 10528 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:11:11,138 autoreload 8308 5244 Watching for file changes with StatReloader
+INFO 2021-05-03 15:11:19,619 autoreload 8308 5244 E:\Projects\cap_1\CentralBank\CentralBank\settings.py changed, reloading.
+INFO 2021-05-03 15:11:20,555 autoreload 9232 6544 Watching for file changes with StatReloader
+INFO 2021-05-03 15:11:22,799 autoreload 9232 6544 E:\Projects\cap_1\CentralBank\CentralBank\settings.py changed, reloading.
+INFO 2021-05-03 15:11:23,796 autoreload 10628 5368 Watching for file changes with StatReloader
+INFO 2021-05-03 15:11:29,119 autoreload 10628 5368 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:11:30,048 autoreload 9224 18900 Watching for file changes with StatReloader
+INFO 2021-05-03 15:11:32,295 autoreload 9224 18900 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:11:33,217 autoreload 10276 19044 Watching for file changes with StatReloader
+INFO 2021-05-03 15:11:34,438 autoreload 10276 19044 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:11:35,306 autoreload 10512 17844 Watching for file changes with StatReloader
+ERROR 2021-05-03 15:11:45,705 log 10512 17052 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 9!
+ERROR 2021-05-03 15:11:45,707 basehttp 10512 17052 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81757
+ERROR 2021-05-03 15:11:52,462 log 10512 17052 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 10!
+ERROR 2021-05-03 15:11:52,463 basehttp 10512 17052 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81862
+INFO 2021-05-03 15:19:13,927 autoreload 16120 18296 Watching for file changes with StatReloader
+INFO 2021-05-03 15:19:21,038 basehttp 16120 5176 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 15:19:23,885 basehttp 16120 5176 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 15:19:34,037 views 16120 5176 Error while user getting loggedin
+INFO 2021-05-03 15:19:34,038 basehttp 16120 5176 "POST /accounts/login/ HTTP/1.1" 200 3552
+INFO 2021-05-03 15:19:37,426 basehttp 16120 5176 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 15:19:47,659 views 16120 5176 Error while user getting loggedin
+INFO 2021-05-03 15:19:47,661 basehttp 16120 5176 "POST /accounts/login/ HTTP/1.1" 200 3552
+INFO 2021-05-03 15:19:49,502 basehttp 16120 5176 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 15:20:05,100 views 16120 5176 user registered sucessfully
+INFO 2021-05-03 15:20:05,101 basehttp 16120 5176 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:20:05,118 basehttp 16120 5176 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:20:14,821 basehttp 16120 5176 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:20:14,888 basehttp 16120 5176 "GET /profile/account_status/ HTTP/1.1" 200 5791
+INFO 2021-05-03 15:20:21,563 basehttp 16120 5176 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 15:20:34,115 basehttp 16120 5176 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 15:20:34,190 basehttp 16120 5176 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 15:20:37,073 basehttp 16120 5176 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 15:20:42,883 views 16120 5176 user Logged-out sucessfully
+INFO 2021-05-03 15:20:42,883 basehttp 16120 5176 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:20:42,895 basehttp 16120 5176 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:20:46,083 basehttp 16120 5176 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 15:21:01,024 views 16120 5176 user registered sucessfully
+INFO 2021-05-03 15:21:01,024 basehttp 16120 5176 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:21:01,036 basehttp 16120 5176 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:21:09,666 basehttp 16120 5176 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:21:09,851 basehttp 16120 5176 "GET /profile/account_status/ HTTP/1.1" 200 5792
+INFO 2021-05-03 15:21:12,555 basehttp 16120 5176 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 15:21:21,726 basehttp 16120 5176 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 15:21:21,809 basehttp 16120 5176 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+INFO 2021-05-03 15:21:37,454 autoreload 16120 18296 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:21:38,363 autoreload 156 14208 Watching for file changes with StatReloader
+INFO 2021-05-03 15:21:42,737 autoreload 156 14208 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:21:43,613 autoreload 14124 11620 Watching for file changes with StatReloader
+INFO 2021-05-03 15:21:48,173 autoreload 14124 11620 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:21:49,087 autoreload 19264 18488 Watching for file changes with StatReloader
+INFO 2021-05-03 15:21:52,211 basehttp 19264 2156 "GET /profile/account_status/ HTTP/1.1" 200 5798
+INFO 2021-05-03 15:21:54,474 basehttp 19264 2156 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 15:22:00,919 views 19264 2156 InSufficient Funds for transfering money from account_no 356439 to 579803
+INFO 2021-05-03 15:22:00,919 basehttp 19264 2156 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 15:22:00,994 basehttp 19264 2156 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6682
+INFO 2021-05-03 15:22:31,230 basehttp 19264 2156 "GET /profile/account_status/ HTTP/1.1" 200 5798
+INFO 2021-05-03 15:22:32,473 basehttp 19264 2156 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 15:22:43,279 autoreload 19264 18488 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:22:44,172 autoreload 9700 12692 Watching for file changes with StatReloader
+INFO 2021-05-03 15:22:47,423 autoreload 9700 12692 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 15:22:48,325 autoreload 12452 14668 Watching for file changes with StatReloader
+INFO 2021-05-03 15:25:41,962 autoreload 12452 14668 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:25:42,826 autoreload 5744 1768 Watching for file changes with StatReloader
+INFO 2021-05-03 15:25:53,527 autoreload 5744 1768 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:25:54,413 autoreload 2332 3544 Watching for file changes with StatReloader
+INFO 2021-05-03 15:28:17,710 autoreload 5172 2532 Watching for file changes with StatReloader
+INFO 2021-05-03 15:28:21,381 views 5172 5704 user Logged-out sucessfully
+INFO 2021-05-03 15:28:21,387 basehttp 5172 5704 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:28:21,405 basehttp 5172 5704 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:28:22,887 basehttp 5172 5704 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 15:28:37,092 views 5172 5704 user registered sucessfully
+INFO 2021-05-03 15:28:37,093 basehttp 5172 5704 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:28:37,106 basehttp 5172 5704 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 15:28:46,102 log 5172 5704 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 53, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 15:28:46,104 basehttp 5172 5704 "POST /accounts/login/ HTTP/1.1" 500 80324
+INFO 2021-05-03 15:28:58,735 basehttp 5172 5704 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:31:25,569 autoreload 8552 10264 Watching for file changes with StatReloader
+ERROR 2021-05-03 15:31:30,024 log 8552 18944 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 53, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 15:31:30,026 basehttp 8552 18944 "POST /accounts/login/ HTTP/1.1" 500 80324
+INFO 2021-05-03 15:33:03,310 autoreload 8552 10264 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:33:04,227 autoreload 5640 13828 Watching for file changes with StatReloader
+INFO 2021-05-03 15:33:21,904 autoreload 5640 13828 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:33:22,779 autoreload 10640 15100 Watching for file changes with StatReloader
+INFO 2021-05-03 15:33:32,229 autoreload 10640 15100 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:33:33,100 autoreload 17396 1124 Watching for file changes with StatReloader
+INFO 2021-05-03 15:33:56,867 autoreload 17396 1124 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:33:57,773 autoreload 11724 14856 Watching for file changes with StatReloader
+INFO 2021-05-03 15:34:03,106 autoreload 11724 14856 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:34:03,987 autoreload 3696 17196 Watching for file changes with StatReloader
+INFO 2021-05-03 15:34:19,591 autoreload 3696 17196 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:34:20,484 autoreload 13016 16664 Watching for file changes with StatReloader
+INFO 2021-05-03 15:34:45,431 autoreload 13016 16664 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:34:46,301 autoreload 16128 5244 Watching for file changes with StatReloader
+INFO 2021-05-03 15:34:52,655 autoreload 16128 5244 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:34:53,571 autoreload 18936 13540 Watching for file changes with StatReloader
+INFO 2021-05-03 15:34:54,882 autoreload 18936 13540 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:34:55,839 autoreload 16872 15280 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:04,243 autoreload 16872 15280 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:35:05,148 autoreload 18156 13576 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:14,535 autoreload 18156 13576 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:35:15,395 autoreload 18552 5176 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:23,797 autoreload 18552 5176 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:35:24,739 autoreload 14540 16664 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:27,236 autoreload 14540 16664 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:35:28,194 autoreload 15340 3112 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:29,629 autoreload 15340 3112 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:35:30,721 autoreload 10620 12596 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:33,116 autoreload 10620 12596 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:35:33,961 autoreload 8812 10936 Watching for file changes with StatReloader
+INFO 2021-05-03 15:35:50,281 basehttp 8812 16412 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 15:35:55,969 log 8812 16412 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 53, in sign_in
+    curr_user = Status.objects.get(user_name=username)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\accounts\views.py", line 57, in sign_in
+    except Status.objects.get(user_name=username).DoesNotExist:
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.Status.DoesNotExist: Status matching query does not exist.
+ERROR 2021-05-03 15:35:55,971 basehttp 8812 16412 "POST /accounts/login/ HTTP/1.1" 500 94009
+INFO 2021-05-03 15:37:59,300 autoreload 8812 10936 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:38:00,176 autoreload 18036 6220 Watching for file changes with StatReloader
+INFO 2021-05-03 15:39:28,997 autoreload 18036 6220 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:39:29,912 autoreload 5952 15760 Watching for file changes with StatReloader
+INFO 2021-05-03 15:39:33,326 autoreload 5952 15760 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:39:34,244 autoreload 15764 16836 Watching for file changes with StatReloader
+INFO 2021-05-03 15:39:35,431 autoreload 15764 16836 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:39:36,372 autoreload 14888 1448 Watching for file changes with StatReloader
+INFO 2021-05-03 15:39:42,951 autoreload 14888 1448 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:39:43,913 autoreload 7124 18188 Watching for file changes with StatReloader
+INFO 2021-05-03 15:39:50,862 basehttp 7124 10700 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 15:40:01,776 views 7124 10700 new user
+INFO 2021-05-03 15:40:01,827 basehttp 7124 10700 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 15:40:01,939 basehttp 7124 10700 "GET /profile/account_status/ HTTP/1.1" 200 5790
+INFO 2021-05-03 15:40:34,375 autoreload 7124 18188 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:40:35,246 autoreload 18016 15928 Watching for file changes with StatReloader
+INFO 2021-05-03 15:40:41,839 autoreload 18016 15928 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:40:42,727 autoreload 17828 6220 Watching for file changes with StatReloader
+INFO 2021-05-03 15:40:46,278 autoreload 17828 6220 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:40:47,138 autoreload 3232 8328 Watching for file changes with StatReloader
+INFO 2021-05-03 15:42:45,018 autoreload 3232 8328 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:42:45,902 autoreload 15892 18760 Watching for file changes with StatReloader
+INFO 2021-05-03 15:42:48,361 autoreload 15892 18760 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:42:49,289 autoreload 2432 6728 Watching for file changes with StatReloader
+INFO 2021-05-03 15:42:50,656 autoreload 2432 6728 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 15:42:51,533 autoreload 16076 14532 Watching for file changes with StatReloader

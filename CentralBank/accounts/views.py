@@ -5,6 +5,7 @@ from django.contrib.auth import login
 from django.contrib.auth import logout
 from django.http import HttpResponse
 from profiles.models import Status 
+from django.contrib.auth.models import User
 
 import logging 
 
@@ -46,10 +47,15 @@ def sign_in(request):
             login(request, user)
             ip = get_client_ip(request)
             username = request.user.get_username()
-            curr_user = Status.objects.get(user_name=username)
+            user = User.objects.get(username=username)
+            
+            try:
+                curr_user = Status.objects.get(user_name=username)
 
-            z = 'user: '+username+" account_no: "+str(curr_user.account_number)+ ' Logged_In Successfully '+'ip_address: '+str(ip)
-            logger.info(z)
+                z = 'user: '+username+" account_no: "+str(curr_user.account_number)+ ' Logged_In Successfully '+'ip_address: '+str(ip)
+                logger.info(z)
+            except Status.DoesNotExist:
+                logger.info("new user :"+str(username)+'logged in.')
             return redirect("profiles:account_status")
         else:
             logger.error('Error while user getting loggedin')
