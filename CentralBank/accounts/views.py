@@ -55,7 +55,7 @@ def sign_in(request):
                 z = 'user: '+username+" account_no: "+str(curr_user.account_number)+ ' Logged_In Successfully '+'ip_address: '+str(ip)
                 logger.info(z)
             except Status.DoesNotExist:
-                logger.info("new user :"+str(username)+'logged in.')
+                logger.info("new user :"+str(username)+' logged in.')
             return redirect("profiles:account_status")
         else:
             logger.error('Error while user getting loggedin')

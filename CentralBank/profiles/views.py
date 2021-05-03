@@ -25,7 +25,7 @@ def index(request):
         # if no details exist (new user), create new details
         curr_user = Status()
         curr_user.account_number = randomGen() # random account number for every new user
-        curr_user.balance = 0
+        curr_user.balance = 1000
         curr_user.user_name = request.user
         curr_user.save()
     return render(request, "profiles/profile.html", {"curr_user": curr_user})

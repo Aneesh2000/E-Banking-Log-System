@@ -19028,3 +19028,264 @@ INFO 2021-05-03 15:42:48,361 autoreload 15892 18760 E:\Projects\cap_1\CentralBan
 INFO 2021-05-03 15:42:49,289 autoreload 2432 6728 Watching for file changes with StatReloader
 INFO 2021-05-03 15:42:50,656 autoreload 2432 6728 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
 INFO 2021-05-03 15:42:51,533 autoreload 16076 14532 Watching for file changes with StatReloader
+INFO 2021-05-03 17:02:01,280 autoreload 12108 18312 Watching for file changes with StatReloader
+INFO 2021-05-03 17:04:31,483 autoreload 16240 10308 Watching for file changes with StatReloader
+INFO 2021-05-03 17:04:36,493 basehttp 16240 15172 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 17:04:40,512 basehttp 16240 15172 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:04:49,664 views 16240 15172 user: aneesh account_no: 579803 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 17:04:49,696 basehttp 16240 15172 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:04:49,877 basehttp 16240 15172 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 17:05:07,135 views 16240 15172 user Logged-out sucessfully
+INFO 2021-05-03 17:05:07,136 basehttp 16240 15172 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:05:07,153 basehttp 16240 15172 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:05:18,054 views 16240 15172 user: karthik account_no: 356439 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 17:05:18,057 basehttp 16240 15172 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:05:18,153 basehttp 16240 15172 "GET /profile/account_status/ HTTP/1.1" 200 5798
+INFO 2021-05-03 17:05:30,387 basehttp 16240 15172 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 17:05:44,261 log 16240 15172 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 2!
+ERROR 2021-05-03 17:05:44,263 basehttp 16240 15172 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81157
+INFO 2021-05-03 17:08:56,036 autoreload 12876 3820 Watching for file changes with StatReloader
+INFO 2021-05-03 17:09:00,306 basehttp 12876 16208 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 17:09:03,808 basehttp 12876 16208 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 17:09:20,461 views 12876 16208 user registered sucessfully
+INFO 2021-05-03 17:09:20,461 basehttp 12876 16208 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:09:20,481 basehttp 12876 16208 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:09:30,408 views 12876 16208 new user :aneeshlogged in.
+INFO 2021-05-03 17:09:30,414 basehttp 12876 16208 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:09:30,685 basehttp 12876 16208 "GET /profile/account_status/ HTTP/1.1" 200 5791
+INFO 2021-05-03 17:09:39,031 basehttp 12876 16208 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+ERROR 2021-05-03 17:09:46,586 views 12876 16208 InSufficient Funds for transfering money from account_no 815659 to 815659
+INFO 2021-05-03 17:09:46,591 basehttp 12876 16208 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 17:09:46,701 basehttp 12876 16208 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6681
+INFO 2021-05-03 17:09:57,130 basehttp 12876 16208 "GET /profile/account_status/ HTTP/1.1" 200 5791
+INFO 2021-05-03 17:10:42,358 autoreload 12876 3820 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 17:10:44,138 autoreload 9324 4260 Watching for file changes with StatReloader
+INFO 2021-05-03 17:11:02,294 views 9324 15844 user Logged-out sucessfully
+INFO 2021-05-03 17:11:02,307 basehttp 9324 15844 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:11:02,337 basehttp 9324 15844 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:11:10,628 basehttp 9324 15844 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 17:11:24,856 views 9324 15844 user registered sucessfully
+INFO 2021-05-03 17:11:24,857 basehttp 9324 15844 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:11:24,876 basehttp 9324 15844 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:11:35,860 views 9324 15844 new user :karthiklogged in.
+INFO 2021-05-03 17:11:35,863 basehttp 9324 15844 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:11:35,981 basehttp 9324 15844 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 17:11:39,454 basehttp 9324 15844 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 17:11:53,614 basehttp 9324 15844 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 17:11:53,699 basehttp 9324 15844 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+ERROR 2021-05-03 17:12:03,253 views 9324 15844 InSufficient Funds for transfering money from account_no 168001 to 815659
+INFO 2021-05-03 17:12:03,255 basehttp 9324 15844 "POST /profile/money_transfer/profiles/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 17:12:03,405 basehttp 9324 15844 "GET /profile/money_transfer/profiles/profiles/profile.html HTTP/1.1" 200 6682
+INFO 2021-05-03 17:12:06,234 basehttp 9324 15844 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 17:12:42,599 autoreload 9324 4260 E:\Projects\cap_1\CentralBank\profiles\views.py changed, reloading.
+INFO 2021-05-03 17:12:43,818 autoreload 12796 11020 Watching for file changes with StatReloader
+INFO 2021-05-03 17:14:08,328 autoreload 12796 11020 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 17:14:10,508 autoreload 14240 16616 Watching for file changes with StatReloader
+INFO 2021-05-03 18:54:39,193 autoreload 16492 17560 Watching for file changes with StatReloader
+INFO 2021-05-03 18:54:43,178 basehttp 16492 2792 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 18:54:46,065 basehttp 16492 2792 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:54:56,977 views 16492 2792 user: aneesh account_no: 815659 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 18:54:56,981 basehttp 16492 2792 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:54:57,054 basehttp 16492 2792 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 18:55:00,257 basehttp 16492 2792 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 18:55:01,730 basehttp 16492 2792 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 18:55:05,987 basehttp 16492 2792 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+ERROR 2021-05-03 18:55:14,744 log 16492 2792 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 2!
+ERROR 2021-05-03 18:55:14,745 basehttp 16492 2792 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81201
+INFO 2021-05-03 18:57:39,982 autoreload 16492 17560 E:\Projects\cap_1\CentralBank\CentralBank\settings.py changed, reloading.
+INFO 2021-05-03 18:57:41,126 autoreload 3016 4492 Watching for file changes with StatReloader
+INFO 2021-05-03 18:58:03,897 autoreload 7208 17988 Watching for file changes with StatReloader
+INFO 2021-05-03 18:58:09,170 basehttp 7208 17868 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 18:58:13,368 basehttp 7208 17868 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 18:58:33,519 views 7208 17868 user registered sucessfully
+INFO 2021-05-03 18:58:33,522 basehttp 7208 17868 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:58:33,555 basehttp 7208 17868 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:58:52,977 views 7208 17868 new user :aneesh logged in.
+INFO 2021-05-03 18:58:52,985 basehttp 7208 17868 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:58:53,072 basehttp 7208 17868 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 18:59:03,652 basehttp 7208 17868 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 18:59:10,860 basehttp 7208 17868 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 18:59:11,039 basehttp 7208 17868 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 18:59:13,502 basehttp 7208 17868 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 18:59:17,479 views 7208 17868 user Logged-out sucessfully
+INFO 2021-05-03 18:59:17,483 basehttp 7208 17868 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:59:17,512 basehttp 7208 17868 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:59:26,005 basehttp 7208 17868 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 18:59:45,353 views 7208 17868 user registered sucessfully
+INFO 2021-05-03 18:59:45,356 basehttp 7208 17868 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:59:45,384 basehttp 7208 17868 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:59:57,251 views 7208 17868 new user :vivek logged in.
+INFO 2021-05-03 18:59:57,254 basehttp 7208 17868 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:59:57,333 basehttp 7208 17868 "GET /profile/account_status/ HTTP/1.1" 200 5793
+INFO 2021-05-03 19:00:01,526 basehttp 7208 17868 "GET /profile/money_transfer/ HTTP/1.1" 200 6510
+INFO 2021-05-03 19:00:15,276 basehttp 7208 17868 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:00:15,425 basehttp 7208 17868 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6510
+INFO 2021-05-03 19:00:17,775 basehttp 7208 17868 "GET /profile/account_status/ HTTP/1.1" 200 5792
+INFO 2021-05-03 19:04:42,623 views 7208 17868 user Logged-out sucessfully
+INFO 2021-05-03 19:04:42,623 basehttp 7208 17868 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:04:42,638 basehttp 7208 17868 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:26:03,256 autoreload 12348 17760 Watching for file changes with StatReloader
+INFO 2021-05-03 19:26:05,465 basehttp 12348 11612 "GET /profile/money_transfer/ HTTP/1.1" 200 6518
+ERROR 2021-05-03 19:26:13,887 log 12348 11612 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+profiles.models.MoneyTransfer.DoesNotExist: MoneyTransfer matching query does not exist.
+ERROR 2021-05-03 19:26:13,889 basehttp 12348 11612 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 80739
+ERROR 2021-05-03 19:26:58,994 views 12348 11612 Error while user getting loggedin
+INFO 2021-05-03 19:26:58,996 basehttp 12348 11612 "POST /accounts/login/ HTTP/1.1" 200 3552
+INFO 2021-05-03 19:27:01,926 basehttp 12348 11612 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 19:27:12,028 views 12348 11612 Error while user getting loggedin
+INFO 2021-05-03 19:27:12,034 basehttp 12348 11612 "POST /accounts/login/ HTTP/1.1" 200 3552
+INFO 2021-05-03 19:27:23,947 autoreload 13644 12804 Watching for file changes with StatReloader
+INFO 2021-05-03 19:27:28,918 basehttp 13644 15652 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 19:27:30,567 basehttp 13644 15652 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:27:45,624 views 13644 15652 user: aneesh account_no: 707195 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:27:45,627 basehttp 13644 15652 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:27:45,711 basehttp 13644 15652 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:27:58,159 basehttp 13644 15652 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 19:28:46,429 basehttp 13644 15652 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:28:46,517 basehttp 13644 15652 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 19:28:48,309 basehttp 13644 15652 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:29:19,358 basehttp 13644 15652 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 19:29:23,576 basehttp 13644 15652 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 19:29:43,144 views 13644 15652 user registered sucessfully
+INFO 2021-05-03 19:29:43,148 basehttp 13644 15652 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:29:43,173 basehttp 13644 15652 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:29:54,976 views 13644 15652 new user :karthik logged in.
+INFO 2021-05-03 19:29:54,980 basehttp 13644 15652 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:29:55,070 basehttp 13644 15652 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:30:38,800 basehttp 13644 15652 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 19:30:45,421 log 13644 15652 Internal Server Error: /profile/money_transfer/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 2!
+ERROR 2021-05-03 19:30:45,424 basehttp 13644 15652 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81158
+INFO 2021-05-03 19:32:43,219 autoreload 10468 14236 Watching for file changes with StatReloader
+INFO 2021-05-03 19:32:46,394 basehttp 10468 16680 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 19:32:48,693 basehttp 10468 16680 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 19:33:05,480 views 10468 16680 user registered sucessfully
+INFO 2021-05-03 19:33:05,480 basehttp 10468 16680 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:05,492 basehttp 10468 16680 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:33:14,717 views 10468 16680 new user :aneesh logged in.
+INFO 2021-05-03 19:33:14,721 basehttp 10468 16680 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:14,819 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:33:19,424 basehttp 10468 16680 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 19:33:25,832 basehttp 10468 16680 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:25,936 basehttp 10468 16680 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 19:33:27,782 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:33:29,346 views 10468 16680 user Logged-out sucessfully
+INFO 2021-05-03 19:33:29,347 basehttp 10468 16680 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:29,362 basehttp 10468 16680 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:33:30,767 basehttp 10468 16680 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 19:33:45,681 views 10468 16680 user registered sucessfully
+INFO 2021-05-03 19:33:45,682 basehttp 10468 16680 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:45,710 basehttp 10468 16680 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:33:54,925 views 10468 16680 new user :karthik logged in.
+INFO 2021-05-03 19:33:54,928 basehttp 10468 16680 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:55,013 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:34:01,107 basehttp 10468 16680 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 19:34:10,416 basehttp 10468 16680 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:34:10,505 basehttp 10468 16680 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+INFO 2021-05-03 19:34:14,173 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:35:53,565 basehttp 10468 16680 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 19:36:47,371 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:38:06,738 views 10468 16680 user Logged-out sucessfully
+INFO 2021-05-03 19:38:06,739 basehttp 10468 16680 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:38:06,754 basehttp 10468 16680 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:38:16,205 views 10468 16680 user: aneesh account_no: 252647 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:38:16,208 basehttp 10468 16680 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:38:16,289 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:38:29,571 basehttp 10468 16680 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 19:38:42,622 basehttp 10468 16680 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:38:42,710 basehttp 10468 16680 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 19:38:44,342 basehttp 10468 16680 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:39:12,369 views 10468 16680 user Logged-out sucessfully
+INFO 2021-05-03 19:39:12,370 basehttp 10468 16680 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:39:12,393 basehttp 10468 16680 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:48:37,217 views 10468 1688 user: aneesh account_no: 252647 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:48:37,220 basehttp 10468 1688 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:48:37,331 basehttp 10468 1688 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:49:06,425 views 10468 1688 user Logged-out sucessfully
+INFO 2021-05-03 19:49:06,425 basehttp 10468 1688 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:49:06,456 basehttp 10468 1688 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:49:16,318 views 10468 1688 user: karthik account_no: 338165 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:49:16,321 basehttp 10468 1688 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:49:16,504 basehttp 10468 1688 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:49:26,800 basehttp 10468 1688 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 19:49:35,510 basehttp 10468 1688 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:49:37,748 basehttp 10468 1688 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+ERROR 2021-05-03 19:49:45,458 views 10468 1688 InSufficient Funds for transfering money from account_no 338165 to 252647
+INFO 2021-05-03 19:49:45,459 basehttp 10468 1688 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:49:45,611 basehttp 10468 1688 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6682
+ERROR 2021-05-03 19:50:09,693 log 10468 1688 Internal Server Error: /profile/money_transfer/profiles/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 2!
+ERROR 2021-05-03 19:50:09,696 basehttp 10468 1688 "POST /profile/money_transfer/profiles/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81269
+INFO 2021-05-03 19:50:14,272 basehttp 10468 1688 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+INFO 2021-05-03 19:50:30,477 basehttp 10468 1688 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+ERROR 2021-05-03 19:50:39,435 log 10468 1688 Internal Server Error: /profile/money_transfer/profiles/{ url 'profiles:money_transfer' }
+Traceback (most recent call last):
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Projects\cap_1\CentralBank\profiles\views.py", line 39, in money_transfer
+    curr_user = models.MoneyTransfer.objects.get(enter_your_user_name=request.user)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\HP\Envs\env\lib\site-packages\django\db\models\query.py", line 442, in get
+    num if not limit or num < limit else 'more than %s' % (limit - 1),
+profiles.models.MoneyTransfer.MultipleObjectsReturned: get() returned more than one MoneyTransfer -- it returned 3!
+ERROR 2021-05-03 19:50:39,435 basehttp 10468 1688 "POST /profile/money_transfer/profiles/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 500 81366
