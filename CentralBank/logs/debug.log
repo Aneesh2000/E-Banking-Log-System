@@ -18235,3 +18235,163 @@ ERROR 2021-05-01 21:22:32,293 views 18344 14644 Error while user getting loggedi
 INFO 2021-05-01 21:22:32,295 basehttp 18344 14644 "POST /accounts/login/ HTTP/1.1" 200 3552
 =======
 >>>>>>> e3e14f15e366fcdd7257a41a94f2f87941d46726
+INFO 2021-05-03 09:47:59,005 autoreload 14268 26900 Watching for file changes with StatReloader
+INFO 2021-05-03 09:48:04,393 basehttp 14268 17940 "GET / HTTP/1.1" 200 3552
+WARNING 2021-05-03 09:48:04,705 log 14268 17940 Not Found: /favicon.ico
+WARNING 2021-05-03 09:48:04,706 basehttp 14268 17940 "GET /favicon.ico HTTP/1.1" 404 2587
+INFO 2021-05-03 09:48:06,100 basehttp 14268 17940 "GET /accounts/login/ HTTP/1.1" 200 4193
+ERROR 2021-05-03 09:48:14,373 views 14268 17940 Error while user getting loggedin
+INFO 2021-05-03 09:48:14,375 basehttp 14268 17940 "POST /accounts/login/ HTTP/1.1" 200 3552
+INFO 2021-05-03 09:48:15,855 basehttp 14268 17940 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:48:24,818 views 14268 17940 user: Tkarthik account_no: 720577 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 09:48:24,827 basehttp 14268 17940 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:48:24,978 basehttp 14268 17940 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 09:48:25,279 basehttp 14268 17940 "GET /static/images/logo_1.png HTTP/1.1" 200 107009
+INFO 2021-05-03 09:48:28,209 basehttp 14268 17940 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+ERROR 2021-05-03 09:48:37,224 log 14268 17940 Internal Server Error: /profile/edit_details/{ url 'profiles:edit_details' }
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "profiles_presentlocation" does not exist
+LINE 1: ...ode", "profiles_presentlocation"."user_name" FROM "profiles_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\sem6\Capstone\BANKING\E-Banking-Log-System\CentralBank\profiles\views.py", line 75, in edit_details
+    curr_user = models.PresentLocation.objects.get(user_name=request.user)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 431, in get
+    num = len(clone)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1169, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "profiles_presentlocation" does not exist
+LINE 1: ...ode", "profiles_presentlocation"."user_name" FROM "profiles_...
+                                                             ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "profiles_presentlocation" does not exist
+LINE 1: INSERT INTO "profiles_presentlocation" ("country", "state", ...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\sem6\Capstone\BANKING\E-Banking-Log-System\CentralBank\profiles\views.py", line 84, in edit_details
+    form.save()
+  File "C:\Python39\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Python39\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Python39\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Python39\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "profiles_presentlocation" does not exist
+LINE 1: INSERT INTO "profiles_presentlocation" ("country", "state", ...
+                    ^
+
+ERROR 2021-05-03 09:48:37,228 basehttp 14268 17940 "POST /profile/edit_details/%7B%20url%20'profiles:edit_details'%20%7D HTTP/1.1" 500 213725
+INFO 2021-05-03 09:49:01,158 basehttp 14268 17940 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 09:56:32,228 autoreload 22216 20620 Watching for file changes with StatReloader
+INFO 2021-05-03 09:56:35,299 basehttp 22216 23968 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 09:56:37,134 basehttp 22216 23968 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 09:56:53,152 views 22216 25888 user registered sucessfully
+INFO 2021-05-03 09:56:53,153 basehttp 22216 25888 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:56:53,167 basehttp 22216 25888 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:57:04,952 basehttp 22216 21556 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:57:05,053 basehttp 22216 21556 "GET /profile/account_status/ HTTP/1.1" 200 5790
+INFO 2021-05-03 09:57:11,159 basehttp 22216 21556 "GET /profile/money_transfer/ HTTP/1.1" 200 6510
+INFO 2021-05-03 09:57:23,889 basehttp 22216 11232 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 09:57:23,961 basehttp 22216 11232 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6510
+INFO 2021-05-03 09:57:25,766 basehttp 22216 18816 "GET /profile/account_status/ HTTP/1.1" 200 5793
+INFO 2021-05-03 09:57:28,067 views 22216 18816 user Logged-out sucessfully
+INFO 2021-05-03 09:57:28,067 basehttp 22216 18816 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:57:28,082 basehttp 22216 18816 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:57:30,756 basehttp 22216 18816 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 09:57:54,603 views 22216 13252 user registered sucessfully
+INFO 2021-05-03 09:57:54,604 basehttp 22216 13252 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:57:54,620 basehttp 22216 13252 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:58:04,965 basehttp 22216 19444 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:58:05,031 basehttp 22216 19444 "GET /profile/account_status/ HTTP/1.1" 200 5791
+INFO 2021-05-03 09:58:11,609 basehttp 22216 19444 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 09:58:21,379 basehttp 22216 9792 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 09:58:21,457 basehttp 22216 9792 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 09:58:23,662 basehttp 22216 9792 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 09:58:33,404 views 22216 1260 user Logged-out sucessfully
+INFO 2021-05-03 09:58:33,405 basehttp 22216 1260 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:58:33,426 basehttp 22216 1260 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:58:44,168 basehttp 22216 14556 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:58:44,232 basehttp 22216 14556 "GET /profile/account_status/ HTTP/1.1" 200 5793
+INFO 2021-05-03 09:58:50,043 basehttp 22216 3156 "GET /profile/money_transfer/ HTTP/1.1" 200 6510
+INFO 2021-05-03 09:58:59,035 basehttp 22216 19416 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 09:58:59,116 basehttp 22216 19416 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6510
+INFO 2021-05-03 09:59:01,532 basehttp 22216 19416 "GET /profile/account_status/ HTTP/1.1" 200 5793
+INFO 2021-05-03 09:59:04,578 views 22216 19416 user Logged-out sucessfully
+INFO 2021-05-03 09:59:04,579 basehttp 22216 19416 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:59:04,594 basehttp 22216 19416 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:59:14,739 basehttp 22216 284 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:59:14,802 basehttp 22216 284 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 09:59:32,992 autoreload 22216 20620 E:\sem6\Capstone\BANKING\E-Banking-Log-System\CentralBank\accounts\views.py changed, reloading.
+INFO 2021-05-03 09:59:33,668 autoreload 8828 19132 Watching for file changes with StatReloader
+INFO 2021-05-03 09:59:36,876 basehttp 8828 20848 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 09:59:38,588 basehttp 8828 20848 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 09:59:46,989 views 8828 20644 user: aneesh account_no: 640854 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 09:59:46,993 basehttp 8828 20644 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 09:59:47,075 basehttp 8828 20644 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 09:59:50,738 basehttp 8828 20644 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 10:00:23,954 basehttp 8828 28352 "POST /profile/edit_details/%7B%20url%20'profiles:edit_details'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 10:00:24,068 basehttp 8828 28352 "GET /profile/edit_details/profiles/edit_details.html HTTP/1.1" 200 14028
+INFO 2021-05-03 10:00:43,726 basehttp 8828 27896 "POST /profile/edit_details/profiles/%7B%20url%20'profiles:edit_details'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 10:00:43,825 basehttp 8828 27896 "GET /profile/edit_details/profiles/profiles/edit_details.html HTTP/1.1" 200 14108
+INFO 2021-05-03 10:00:55,351 basehttp 8828 9100 "POST /profile/edit_details/profiles/profiles/%7B%20url%20'profiles:edit_details'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 10:00:55,467 basehttp 8828 9100 "GET /profile/edit_details/profiles/profiles/profiles/edit_details.html HTTP/1.1" 200 14108
