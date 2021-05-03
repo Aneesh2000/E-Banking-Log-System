@@ -19028,3 +19028,140 @@ INFO 2021-05-03 15:42:48,361 autoreload 15892 18760 E:\Projects\cap_1\CentralBan
 INFO 2021-05-03 15:42:49,289 autoreload 2432 6728 Watching for file changes with StatReloader
 INFO 2021-05-03 15:42:50,656 autoreload 2432 6728 E:\Projects\cap_1\CentralBank\accounts\views.py changed, reloading.
 INFO 2021-05-03 15:42:51,533 autoreload 16076 14532 Watching for file changes with StatReloader
+INFO 2021-05-03 17:24:55,188 autoreload 13936 10204 Watching for file changes with StatReloader
+INFO 2021-05-03 17:24:58,182 basehttp 13936 8584 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 17:24:58,240 basehttp 13936 8584 "GET /static/common-styles.css HTTP/1.1" 304 0
+INFO 2021-05-03 17:24:58,316 basehttp 13936 8584 "GET /static/images/logo_2.png HTTP/1.1" 304 0
+WARNING 2021-05-03 17:24:59,005 log 13936 8584 Not Found: /favicon.ico
+WARNING 2021-05-03 17:24:59,006 basehttp 13936 8584 "GET /favicon.ico HTTP/1.1" 404 2564
+INFO 2021-05-03 17:25:11,283 basehttp 13936 8584 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 17:25:36,868 views 13936 8584 user registered sucessfully
+INFO 2021-05-03 17:25:36,869 basehttp 13936 8584 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:25:36,904 basehttp 13936 8584 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:25:57,773 views 13936 8584 new user :aneeshlogged in.
+INFO 2021-05-03 17:25:57,779 basehttp 13936 8584 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:25:57,992 basehttp 13936 8584 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 17:25:58,102 basehttp 13936 8584 "GET /static/images/logo_1.png HTTP/1.1" 304 0
+INFO 2021-05-03 17:26:05,472 basehttp 13936 8584 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 17:26:12,478 basehttp 13936 8584 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 17:26:21,879 basehttp 13936 8584 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 17:27:55,502 basehttp 13936 21320 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 17:27:57,259 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 17:28:11,258 views 13936 21320 user Logged-out sucessfully
+INFO 2021-05-03 17:28:11,258 basehttp 13936 21320 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:28:11,271 basehttp 13936 21320 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:28:20,990 basehttp 13936 21320 "GET /accounts/register/ HTTP/1.1" 200 5716
+INFO 2021-05-03 17:28:35,594 views 13936 21320 user registered sucessfully
+INFO 2021-05-03 17:28:35,596 basehttp 13936 21320 "POST /accounts/register/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:28:35,636 basehttp 13936 21320 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:28:43,452 views 13936 21320 new user :karthiklogged in.
+INFO 2021-05-03 17:28:43,455 basehttp 13936 21320 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:28:43,523 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 17:28:56,903 views 13936 21320 user Logged-out sucessfully
+INFO 2021-05-03 17:28:56,904 basehttp 13936 21320 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:28:56,919 basehttp 13936 21320 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:29:08,755 views 13936 21320 user: aneesh account_no: 536958 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 17:29:08,758 basehttp 13936 21320 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:29:08,822 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 17:29:11,649 basehttp 13936 21320 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 17:29:21,759 basehttp 13936 21320 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 17:29:21,828 basehttp 13936 21320 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 17:29:23,573 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5791
+INFO 2021-05-03 17:30:17,377 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 17:30:28,735 views 13936 21320 user Logged-out sucessfully
+INFO 2021-05-03 17:30:28,735 basehttp 13936 21320 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:30:28,748 basehttp 13936 21320 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 17:31:54,596 views 13936 21320 user: karthik account_no: 447052 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 17:31:54,599 basehttp 13936 21320 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:31:54,678 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 17:32:05,755 basehttp 13936 21320 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 17:32:37,936 basehttp 13936 21320 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 17:32:38,008 basehttp 13936 21320 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+INFO 2021-05-03 17:32:40,662 basehttp 13936 21320 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 17:32:56,042 views 13936 21320 user Logged-out sucessfully
+INFO 2021-05-03 17:32:56,043 basehttp 13936 21320 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 17:32:56,056 basehttp 13936 21320 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:56:21,752 autoreload 11628 8404 Watching for file changes with StatReloader
+INFO 2021-05-03 18:56:23,657 basehttp 11628 11444 "GET / HTTP/1.1" 200 3552
+INFO 2021-05-03 18:56:26,972 basehttp 11628 11444 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:56:34,266 views 11628 11444 user: karthik account_no: 447052 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 18:56:34,388 basehttp 11628 11444 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:56:34,557 basehttp 11628 11444 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 18:56:39,471 basehttp 11628 11444 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 18:56:40,611 basehttp 11628 11444 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 18:56:44,689 basehttp 11628 11444 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 18:56:55,113 basehttp 11628 11444 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 18:56:55,179 basehttp 11628 11444 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+INFO 2021-05-03 18:56:56,900 basehttp 11628 11444 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 18:57:06,322 basehttp 11628 11444 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 18:57:31,564 views 11628 11444 user Logged-out sucessfully
+INFO 2021-05-03 18:57:31,565 basehttp 11628 11444 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:57:31,575 basehttp 11628 11444 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 18:59:11,683 views 11628 11444 user: aneesh account_no: 536958 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 18:59:11,687 basehttp 11628 11444 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 18:59:11,747 basehttp 11628 11444 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:25:50,077 views 11628 21080 user Logged-out sucessfully
+INFO 2021-05-03 19:25:50,078 basehttp 11628 21080 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:25:50,092 basehttp 11628 21080 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:26:11,032 views 11628 21080 user: aneesh account_no: 536958 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:26:11,035 basehttp 11628 21080 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:26:11,095 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:26:17,842 views 11628 21080 user Logged-out sucessfully
+INFO 2021-05-03 19:26:17,843 basehttp 11628 21080 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:26:17,854 basehttp 11628 21080 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:26:41,458 views 11628 21080 user: karthik account_no: 447052 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:26:41,460 basehttp 11628 21080 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:26:41,518 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 19:26:45,886 basehttp 11628 21080 "GET /profile/money_transfer/ HTTP/1.1" 200 6512
+INFO 2021-05-03 19:26:55,580 basehttp 11628 21080 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:26:55,648 basehttp 11628 21080 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6512
+INFO 2021-05-03 19:26:57,012 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 19:26:59,755 views 11628 21080 user Logged-out sucessfully
+INFO 2021-05-03 19:26:59,755 basehttp 11628 21080 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:26:59,769 basehttp 11628 21080 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:31:25,049 views 11628 21080 user: karthik account_no: 447052 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:31:25,052 basehttp 11628 21080 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:31:25,109 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 19:32:21,348 views 11628 21080 user Logged-out sucessfully
+INFO 2021-05-03 19:32:21,349 basehttp 11628 21080 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:32:21,361 basehttp 11628 21080 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:33:20,260 views 11628 21080 user: aneesh account_no: 536958 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:33:20,392 basehttp 11628 21080 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:20,454 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:33:32,091 basehttp 11628 21080 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 19:33:41,512 basehttp 11628 21080 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:41,576 basehttp 11628 21080 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 19:33:43,093 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:33:44,958 basehttp 11628 21080 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 19:33:50,150 basehttp 11628 21080 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:33:57,473 views 11628 21080 user Logged-out sucessfully
+INFO 2021-05-03 19:33:57,473 basehttp 11628 21080 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:33:57,485 basehttp 11628 21080 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:51:10,508 views 11628 15488 user: karthik account_no: 447052 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:51:10,512 basehttp 11628 15488 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:51:10,602 basehttp 11628 15488 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 19:51:20,746 views 11628 15488 user Logged-out sucessfully
+INFO 2021-05-03 19:51:20,747 basehttp 11628 15488 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:51:20,760 basehttp 11628 15488 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:51:32,350 views 11628 15488 user: aneesh account_no: 536958 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:51:32,353 basehttp 11628 15488 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:51:32,419 basehttp 11628 15488 "GET /profile/account_status/ HTTP/1.1" 200 5795
+INFO 2021-05-03 19:51:36,043 basehttp 11628 15488 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 19:51:43,315 basehttp 11628 15488 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:51:43,396 basehttp 11628 15488 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 19:51:45,053 basehttp 11628 15488 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:52:31,535 basehttp 11628 15488 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:52:41,653 basehttp 11628 15488 "GET /profile/money_transfer/ HTTP/1.1" 200 6511
+INFO 2021-05-03 19:52:48,059 basehttp 11628 15488 "POST /profile/money_transfer/%7B%20url%20'profiles:money_transfer'%20%7D HTTP/1.1" 302 0
+INFO 2021-05-03 19:52:48,134 basehttp 11628 15488 "GET /profile/money_transfer/profiles/profile.html HTTP/1.1" 200 6511
+INFO 2021-05-03 19:52:49,208 basehttp 11628 15488 "GET /profile/account_status/ HTTP/1.1" 200 5794
+INFO 2021-05-03 19:52:59,595 basehttp 11628 15488 "GET /profile/edit_details/ HTTP/1.1" 200 14028
+INFO 2021-05-03 19:53:30,449 views 11628 15488 user Logged-out sucessfully
+INFO 2021-05-03 19:53:30,449 basehttp 11628 15488 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:53:30,462 basehttp 11628 15488 "GET /accounts/login/ HTTP/1.1" 200 4193
+INFO 2021-05-03 19:55:57,717 views 11628 15488 user: karthik account_no: 447052 Logged_In Successfully ip_address: 127.0.0.1
+INFO 2021-05-03 19:55:57,720 basehttp 11628 15488 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:55:57,788 basehttp 11628 15488 "GET /profile/account_status/ HTTP/1.1" 200 5796
+INFO 2021-05-03 19:58:50,656 views 11628 15488 user Logged-out sucessfully
+INFO 2021-05-03 19:58:50,657 basehttp 11628 15488 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2021-05-03 19:58:50,669 basehttp 11628 15488 "GET /accounts/login/ HTTP/1.1" 200 4193
